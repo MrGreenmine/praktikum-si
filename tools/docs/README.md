@@ -27,12 +27,27 @@
 
 ### Вариант 1 — GitHub Pages (бесплатно)
 
-Репозиторий уже содержит всё: исходники в `tools/`, готовый сайт в `site/`.
-Осталось только включить Pages:
+В репозитории всё нужное уже есть: исходники в `tools/`, готовый сайт в `site/`
+и опубликованная ветка `gh-pages`, из которой GitHub Pages берёт файлы.
 
-**Settings → Pages → Source: `Deploy from a branch` → ветка `main`, папка `/site` → Save.**
+Включить Pages:
 
-Через минуту сайт будет доступен на `https://<ваш-логин>.github.io/<repo>/`.
+**Settings → Pages → Source: `Deploy from a branch` → ветка `gh-pages`, папка `/ (root)` → Save.**
+
+Через минуту сайт будет доступен на `https://<логин>.github.io/<репозиторий>/`.
+
+Чтобы обновить сайт, достаточно пересобрать его и перезалить ветку:
+
+```bash
+sh tools/publish_pages.sh
+```
+
+Скрипт соберёт `site/` и обновит `gh-pages` на GitHub.
+
+*Альтернатива — автодеплой через GitHub Actions:* скопируйте
+`tools/pages-deploy.yml` в `.github/workflows/pages.yml` и в настройках Pages
+выберите Source: `GitHub Actions`. Тогда сайт будет публиковаться сам при каждом
+push в `main`.
 
 ### Вариант 2 — любой статический хостинг
 

@@ -67,6 +67,8 @@ git clone https://github.com/<логин>/<репозиторий>.git
 │   ├── extract4.py            выгрузка оригинала Google Sites → clean/*.html
 │   ├── codefmt.py             эвристика: абзацы с кодом → <pre><code>
 │   ├── build.py               сборка сайта из clean/ → site/
+│   ├── publish_pages.sh       пересборка и обновление ветки gh-pages (GitHub Pages)
+│   ├── pages-deploy.yml       шаблон workflow для автодеплоя через Actions
 │   ├── meta.json              метаданные выгруженных страниц
 │   ├── assets/                style.css и app.js, которые копируются в сборку
 │   ├── docs/                  эта инструкция и MIGRATION.md
@@ -108,9 +110,15 @@ python3 build.py            # и сразу пересобирает site/
 
 ### GitHub Pages (бесплатно)
 
-**Settings → Pages → Source: `Deploy from a branch` → ветка `main`, папка `/site` → Save.**
+Сайт уже опубликован в ветке `gh-pages` — её и указываем в настройках:
 
-Через минуту сайт будет доступен на `https://<логин>.github.io/<репозиторий>/`.
+**Settings → Pages → Source: `Deploy from a branch` → ветка `gh-pages`, папка `/ (root)` → Save.**
+
+Через минуту сайт будет доступен на `https://mrgreenmine.github.io/praktikum-si/`.
+
+Обновить сайт: `sh tools/publish_pages.sh` (пересобирает и перезаливает ветку).
+Либо автодеплой через GitHub Actions — скопируйте `tools/pages-deploy.yml` в
+`.github/workflows/pages.yml` и выберите Source: `GitHub Actions`.
 
 ### Любой статический хостинг
 
