@@ -1,0 +1,522 @@
+{
+ "index": {
+  "slug": "",
+  "title": "Главная",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "istochniki": {
+  "slug": "главная/источники",
+  "title": "Источники",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "spravochnik": {
+  "slug": "главная/справочник-по-языку-си",
+  "title": "Справочник по языку Си",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "alfavit": {
+  "slug": "главная/справочник-по-языку-си/алфавит",
+  "title": "Алфавит",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "S_Используемые символы.pdf",
+    "https://drive.google.com/open?id=1XFJwqDfdufz3xpUXZQNNgSvbqF1dWHyY"
+   ]
+  ]
+ },
+ "vvod-vyvod": {
+  "slug": "главная/справочник-по-языку-си/ввод-вывод",
+  "title": "Ввод и вывод",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "instrumenty": {
+  "slug": "главная/инструменты-разработки",
+  "title": "Инструменты разработки",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "sozdanie-proekta": {
+  "slug": "главная/инструменты-разработки/создание-проекта",
+  "title": "Создание проекта",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "nastroyki-proekta": {
+  "slug": "главная/инструменты-разработки/настройки-проекта",
+  "title": "Настройки проекта",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "git": {
+  "slug": "главная/инструменты-разработки/работа-с-git",
+  "title": "Работа с Git",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "github": {
+  "slug": "главная/инструменты-разработки/работа-с-git/работа-с-github",
+  "title": "Работа с GitHub",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "lokalizaciya": {
+  "slug": "главная/инструменты-разработки/языковые-настройки-и-локализация",
+  "title": "Языковые настройки и локализация",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "ide-mvs": {
+  "slug": "главная/инструменты-разработки/помощник-по-ide-mvs",
+  "title": "Помощник по IDE MVS",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "keyboard-shortcuts-windows.pdf",
+    "https://drive.google.com/open?id=1QHPBNrebNEJ5-FmRqwxub35Ors6uNRp1"
+   ]
+  ]
+ },
+ "primery": {
+  "slug": "главная/примеры",
+  "title": "Примеры",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "shkala": {
+  "slug": "шкала-прогресса",
+  "title": "Шкала прогресса",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "kp": {
+  "slug": "кп",
+  "title": "Контрольная работа",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Методические указания к курсовому проекту.pdf",
+    "https://drive.google.com/open?id=13fHaN8uqw6BsCzZ8oc6gRiyoVIOIegk-"
+   ],
+   [
+    "КП_пример.pdf",
+    "https://drive.google.com/open?id=1rEMwCYNbTd0rinoia9ARHqZEOobrr2cO"
+   ],
+   [
+    "КП_Тюленев.pdf",
+    "https://drive.google.com/open?id=1fkSvvyBOpzo4e_cVAsnxT5OFv2f-VnjB"
+   ]
+  ]
+ },
+ "kp-soderzhanie": {
+  "slug": "кп/содержание-пояснительной-записки",
+  "title": "Содержание пояснительной записки",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "КП содержание.pdf",
+    "https://drive.google.com/open?id=1xQAy29l2X2SaGY3K5Kw4GPCBJ1rCDfnE"
+   ]
+  ]
+ },
+ "kp-oformlenie": {
+  "slug": "кп/оформление-пояснительной-записки",
+  "title": "Оформление пояснительной записки",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Оформление_отчетов_КР_КП.pdf",
+    "https://drive.google.com/open?id=1RiPZDjjNGr4K1nM-EjnGunNzuWiB6VA-"
+   ]
+  ]
+ },
+ "kp-codestyle": {
+  "slug": "кп/codestyle",
+  "title": "CodeStyle",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "praktika": {
+  "slug": "практика",
+  "title": "Практика",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Оформление текста программы.pdf",
+    "https://drive.google.com/open?id=1l93NG99U5fFPZhLrcTMrgYxrHJSW3Xg1"
+   ]
+  ]
+ },
+ "rabota-1": {
+  "slug": "практика/работа-1",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": []
+ },
+ "rabota-2": {
+  "slug": "практика/работа-2",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Форматированный вывод.pdf",
+    "https://drive.google.com/open?id=1tbEf5ELJPszepg9fWTd0vlv24hlbZRco"
+   ],
+   [
+    "Домашние задания для лаб.4.pdf",
+    "https://drive.google.com/open?id=1CGno-PUc3HLlqu2z6rptYD429vO21pWS"
+   ],
+   [
+    "тема А.pdf",
+    "https://drive.google.com/open?id=1F6MD_WF2AeVemS5w0hnLtc2LaS3HL0h7"
+   ]
+  ]
+ },
+ "rabota-3": {
+  "slug": "практика/работа-3",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "3_Ввод данных.pdf",
+    "https://drive.google.com/open?id=1FjygVt4OzmdokPwc8phs6xstH-Ener8p"
+   ],
+   [
+    "Домашние задания для лаб.3.pdf",
+    "https://drive.google.com/open?id=1wIYhQ_m7DvP8_MYCZdbzSPdBZYI0pYhi"
+   ]
+  ]
+ },
+ "rabota-4": {
+  "slug": "практика/работа-4",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Типы данных Справка.pdf",
+    "https://drive.google.com/open?id=1-qkRZJZ-q1M26Gufybn70eag8b8a0OoJ"
+   ]
+  ]
+ },
+ "rabota-5": {
+  "slug": "практика/работа-5",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "Теория 5.pdf",
+    "https://drive.google.com/open?id=1UdEbSwJ2CMbQl2MR9_juBGW4xgdzuMkS"
+   ],
+   [
+    "Задание 5.2.pdf",
+    "https://drive.google.com/open?id=1LigfTYenVCnngm4s7UkMecoPHzADjMLG"
+   ],
+   [
+    "ДЗ_5.pdf",
+    "https://drive.google.com/open?id=1wvWm5s72psbTkr7SI4fySPSxPmfLrM7f"
+   ],
+   [
+    "Задание 5.2б.pdf",
+    "https://drive.google.com/open?id=1r-y-OQdF3-dr0SREWV5qGjpv4Lb4M_3p"
+   ],
+   [
+    "ДЗ5-3.pdf",
+    "https://drive.google.com/open?id=1r94lL8FrRwQ1v8geAiHWiKjH7-u_-nfy"
+   ]
+  ]
+ },
+ "rabota-6": {
+  "slug": "практика/работа-6",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "6_теория.pdf",
+    "https://drive.google.com/open?id=1cO3bY1ieehqF2C4hdLB4kBBD8qI-csuJ"
+   ],
+   [
+    "Зад. 6.2.pdf",
+    "https://drive.google.com/open?id=18sQ04WLV7X2NfkQbI0eNR5-GFYXMdblE"
+   ],
+   [
+    "6_Задания.pdf",
+    "https://drive.google.com/open?id=1GiiUloWsMIb8fpSKeDaGTHtNVitsUYZ6"
+   ],
+   [
+    "ДЗ6 на сложные условия.pdf",
+    "https://drive.google.com/open?id=1SU7icb-hQQz9eTtiNDCOkaKrEe_1-b_Z"
+   ]
+  ]
+ },
+ "rabota-7": {
+  "slug": "практика/работа-7",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "7_Теория.pdf",
+    "https://drive.google.com/open?id=1nJ-Ih5aaiZXHxtGkHqEzIwgBhc1zdAnY"
+   ],
+   [
+    "7_Домашние задания.pdf",
+    "https://drive.google.com/open?id=16nzrf0BHD9wZWADOe2NGF4yxLYh-FOHH"
+   ]
+  ]
+ },
+ "rabota-8": {
+  "slug": "практика/работа-8",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s0vsS4zuGBU6I2qhLSJbYdGKvGuGRV9rWgGZT2A8tX53GpWIfGEBJMz5nUxHvmc8HQTBupU-MXJqk1icRBO-RYnoSMKnS2W3_Xqr99ms3NsLQyrkweMHAdKqr8y4NBkNoFY2egGoeXobOA_HsBA1OQ_8ykZjOYeIs9=w16383",
+  "files": [
+   [
+    "8_Теория(цикл for).pdf",
+    "https://drive.google.com/open?id=1D7XIClc6irHzGwvtrwCXYyV4dx142XNg"
+   ],
+   [
+    "Зад.8-2.pdf",
+    "https://drive.google.com/open?id=1_kyqETf8HIlBl1qxg0Dp1MNloMveCZgv"
+   ],
+   [
+    "8_ДЗ_ряды с парамтерами.pdf",
+    "https://drive.google.com/open?id=1yDJQzTj_fvve6fjmPZY033CgbecCpkjj"
+   ]
+  ]
+ },
+ "rabota-9": {
+  "slug": "практика/работа-9",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72uRukKJlBzSrgnY5DQAW25YyguI0gCL1VIvS5Y9K6bkswk7jl1Us1nWIg2h9axvdU4TAoPQS5sT4CfuX1yC-cd100D6OemN39GKjNDA3ss8naVf3rlXxFrKcdIIBZXwmtgGvUgY3YJ2pDo_7hHIjMjHtU3rabuNAqJJDeg=w16383",
+  "files": [
+   [
+    "9_Теория.pdf",
+    "https://drive.google.com/open?id=1X1hHMcyRLFsAEqVvhPhggjBpOjAjiTbU"
+   ],
+   [
+    "ДЗ 9.pdf",
+    "https://drive.google.com/open?id=1NpTIvrBy8P8JVqpB-33r0osT3zzilhWT"
+   ]
+  ]
+ },
+ "rabota-10": {
+  "slug": "практика/работа-10",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72uAMtKbn1ZUxuqhxqFk-ctkn__3NpbWc34lc3-tq4lPfl2Nkke4dfkW4tPJqWK6MOi2-awdxXEO7bkRrxtGPYmTG1nJet5md4SvWpYKOWfbi5kCrd5BZTL_rQTpGVHlOxScnJJut9MSEJ8iW8hvM66V00wOIeBW1eFe4JY=w16383",
+  "files": [
+   [
+    "10_Функции.pdf",
+    "https://drive.google.com/open?id=1m09vMYISmUrtFZP8wkzpqBlQszvvC1GD"
+   ]
+  ]
+ },
+ "rabota-11": {
+  "slug": "практика/работа-11",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72vFmgJrDpbOEcaHhgAD-IGQhVYsrK3yDrl7ICrBIwzrZuhG1iNZPRkxCBnAHLromw344r5Yd8kzHU1LXePU_WvVRgjx7JyokSPT_HFC_ZDPkFHiTKuOHvlUiOb3pcW6qxmvPqiSZ6mJZdCdrkBRkFrUU_z7WHg7oUqrGpw=w16383",
+  "files": [
+   [
+    "11_Массивы начало.pdf",
+    "https://drive.google.com/open?id=1EQkgtaA6-ePNpERH4jmA_ojEpgvhceYZ"
+   ],
+   [
+    "11_ДЗ_2021.pdf",
+    "https://drive.google.com/open?id=12UnqxpoWxz84pclbkRtjLQp6sj2_xIAQ"
+   ]
+  ]
+ },
+ "rabota-12": {
+  "slug": "практика/работа-12",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s7KYXMhaAGHlKayg8u5IJw1mdShmitOWbH2EvEoOMkSyJ810XtJP_LsywMhS1ZRix8Q6U2fbNcQgUt7PLmsY6ucs3R6NvE1nYsmnkBdpdRWI8Qdy87gKK96SkxMfUwTfNtDNhSvystz1DkCMROZx0lZt_vc0ICcXEoK0Y=w16383",
+  "files": [
+   [
+    "12_Указатели.pdf",
+    "https://drive.google.com/open?id=1TPblhPdagSx8v_b8lfZqAUt_hsWweMam"
+   ]
+  ]
+ },
+ "rabota-13": {
+  "slug": "практика/работа-13",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72v_QD6QhRCvNf6c5IT_JmfvyZ33D9I_sPCQJwxLYCQMzUVvcoSFzvwZP3eN96zDvQSYzbP9ylLr3M5Q493mXc4lcZA0x3DjTNV-vjcV4-NijdI0PES_qxP0JOf4rSaqfBzZe3tPVtxmFiJ8SzSc3f9G8yxuMHvYmKl8=w16383",
+  "files": [
+   [
+    "13_Строки.pdf",
+    "https://drive.google.com/open?id=1xmfvp0a1wdf-CoR4OeVGIrIVgQ02zghZ"
+   ],
+   [
+    "ДЗ13_21.pdf",
+    "https://drive.google.com/open?id=1WsklE_aHSQOY_DfQNRyZkzipTjuWbMrT"
+   ]
+  ]
+ },
+ "rabota-14": {
+  "slug": "практика/работа-14",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72tzggu1hqFNtjARx0DJm1slZONF1x1Z2aXWrkGFuH0FLkuXMZ-6AnlD3WQ0YhDC7s5-ZH9LEV0lcIDPX5osNkHIh37ZpZH3OUEndrF0N0uIBqgwNnADr5ulI1poBAtVovYJ2ie8dIIlLN0LG5qRJX6_hIGTQB1BkpwGO0c=w16383",
+  "files": [
+   [
+    "14_Передача массивов по ссылке.pdf",
+    "https://drive.google.com/open?id=1UbIBjTo9rSqpJtfYWCW2gnTfjMTkzqb8"
+   ],
+   [
+    "ДЗ_14_21.pdf",
+    "https://drive.google.com/open?id=1qG1b7rUMg0T01JuLuDsXbCsIhKtMW0nw"
+   ]
+  ]
+ },
+ "rabota-15": {
+  "slug": "практика/работа-15",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72s2oCC9FYOFDOizrUwLzneRrfXCK3c0nMIeGPqN9FoY3DVzzE3v1haCF3Dj5u__tjlJA_Zsn1mXz9_E1b5r1LVuljHCdZO1gGUqdiiBDQIdo-rj1kpKB5uz9NH9PkfGZT5cBcIPMwTqWpQoZh87r7C2-2E-lr4rd2Hk7O4=w16383",
+  "files": [
+   [
+    "15_Статический многомерный массив.pdf",
+    "https://drive.google.com/open?id=1-JWGLHcGskUUCgA-s1wZXffJy-Z0-0YO"
+   ],
+   [
+    "15_ДЗ_2020.pdf",
+    "https://drive.google.com/open?id=16MJscV6gV0qQpN-GlvhYhFrJ29C_60er"
+   ]
+  ]
+ },
+ "rabota-16": {
+  "slug": "практика/работа-16",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72sFC3V1zPKqUzeeIq3S_VYn4KLhKPQbgaH8cLYgIls3_uIAAIBex5LkEW0KQXXZTmNZXPAc2bk00TqtLDmdHZFUfgIaK-o-lBkuMeG5x2INa-etc_LAinlMpa1ZS9fmWL663GN64Qtma4Q1VwcqD88X822js3w8kvbv=w16383",
+  "files": [
+   [
+    "16_Динамические массивы.pdf",
+    "https://drive.google.com/open?id=1yaKX39dd4JUd17OLN-D9ua040E2qw-KO"
+   ],
+   [
+    "16_ДЗ_21.pdf",
+    "https://drive.google.com/open?id=1VtbvaLhO_rpWg4GOyDn2GTCMqMsrVEPm"
+   ]
+  ]
+ },
+ "rabota-17": {
+  "slug": "практика/работа-17",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72vD9PVJVSbP2NrBRComtc55RZtlLPadLJ1gctcYW67YcwNU6UIfX0UaN2wFZGEkTELGpju8qXhQqyByALKSaZEIxeUXgu633L8VREl69OWM-Dj88836c4k-wa6xhV2ieh7klCOD2nbKMSSUMILVjXP0f6DyaYNpsWh7Lcg=w16383",
+  "files": [
+   [
+    "17_Сортировки.pdf",
+    "https://drive.google.com/open?id=1BQzd-_k8W_DqnIZsbGlsH1izbiQkFhnY"
+   ],
+   [
+    "Протокол вычислительного эксперимента.docx",
+    "https://drive.google.com/open?id=1wIuNxR4N_B_pjTgPJU0jdpldy6TH8-rp"
+   ]
+  ]
+ },
+ "rabota-18": {
+  "slug": "практика/работа-18",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72uwP7XdlNqDzYTe6DBf-rLmuV9eVyS4b4tOnTcrVw3qrIbGLRfTrExPO5cMTQ_KvKPV3dTQ29P93HREtGD9psL1pwDKtbR7gbhRoU72bqse6Sp5C-gxZhqYvG43cypK5qzJto5pgNRTTjHehtaHMVGMggxnTsKs9pNpVw0=w16383",
+  "files": [
+   [
+    "18_Структура.pdf",
+    "https://drive.google.com/open?id=1scXp4CGuZt91yaf6WlwNycXF0RQjYcIw"
+   ],
+   [
+    "18_ДЗ.pdf",
+    "https://drive.google.com/open?id=1TQ2VPOwZlsSptjcFS6IylSmPiy2DUIci"
+   ]
+  ]
+ },
+ "rabota-19": {
+  "slug": "практика/работа-19",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72vWOIiUGWB-YShE5NUamHTELuCFFTAGqbmatg2IK_218QKW2d7OKXHwNOcOiVJ66vvoIFo7VN9hn78hAoPbU3S6M9u3w3_kyQMNrhtiHNFA3HzwEeerPnSZ23G9l1Vbu2lUV0e5tdnDc1Rv1C_ppFKby-3_20-l_39e=w16383",
+  "files": [
+   [
+    "19_Файловый вывод.pdf",
+    "https://drive.google.com/open?id=1j5gfXk7ws4rZ5Rv6HBXMWHFq4J8L9oi4"
+   ]
+  ]
+ },
+ "rabota-20": {
+  "slug": "практика/работа-20",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72uDpaJ0AgT5OZmbZs-R3RI1oaAMFSflRPDMPIAmDQHwr7lHlsln8eo_z9i7ZJMKjKbAwT42wWR31-05_6Wu0iuNQWi1Hxj9XEAJ_kdeyQ87NjCpOKsc7_Ow7P-VyPs7QV14x2BY9e5v043he7wwksIv3yN6GmZfu_tP8S8=w16383",
+  "files": [
+   [
+    "20_Чтение из файла.pdf",
+    "https://drive.google.com/open?id=1I6ZOP_cM2bYx0aDSVnF4ox8INUTW4sep"
+   ],
+   [
+    "19_ДЗ.pdf",
+    "https://drive.google.com/open?id=1Ub5Z30AyIdYrGuxup9YttbbagDhHla6S"
+   ]
+  ]
+ },
+ "rabota-21-zapisi": {
+  "slug": "практика/работа-21-записи",
+  "title": "Массив структур",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72up_jxZmQ_GCpnaZBruqREaTOmI5C6yQBIQkcIBVwfrO_x81xmV1HE0j9tlsVWdMzl0Euk9xpIwhPD1VnpoYg_TMA7TpVSAW5pde8SUk6F_ohXK7v7g2acuqOZpfXKDLNkunlo243T3totCge-1F9qxToUP7CK8FHpHXvQ=w16383",
+  "files": [
+   [
+    "21_Массивы структур.pdf",
+    "https://drive.google.com/open?id=1zLzXYnvZkct0g15qVFaITQlmSUGlDqiW"
+   ]
+  ]
+ },
+ "rabota-23": {
+  "slug": "практика/работа-23",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72vXKm0UrjozHn2LMFo3xesqFMtpljtFSy0XjF_ECZtDGC0GCntA0YUolW2g9tluxwngKetJsdIZqao9nGQlAGXnacN-vf3aXL6X_TKU_Tsk6K_78JUcrN9DWUrj4jt_4QZ8a9LhzbozjAzf24v_LOmqUvCeGnp8dXOZDn8=w16383",
+  "files": [
+   [
+    "23_Линейный связанный список.pdf",
+    "https://drive.google.com/open?id=1IV2R_EffVV_tH0-hn1LgjLIGcnkJJ0e_"
+   ]
+  ]
+ },
+ "rabota-24": {
+  "slug": "практика/работа-24",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72sglz4agSz2RjlQ0QYD0DvpcRYo13rf9hjbVaeEVX3wOZD2k_OHxwgCW4QsDZnPhYr0hqv9VjY_2uezt05g0wHduQSs5z51uPiarfjJrdwWXl03SpXh5iUfw6h4W3HQFXX1ATqtp7vH1A7S-A6axaTwcagltdZsF3ayC_U=w16383",
+  "files": [
+   [
+    "24_Стеки и очереди.pdf",
+    "https://drive.google.com/open?id=1edKaTvMqjx_RjOauq42sjvi1beWfRe8P"
+   ]
+  ]
+ },
+ "rabota-25": {
+  "slug": "практика/работа-25",
+  "title": "",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72tzggu1hqFNtjARx0DJm1slZONF1x1Z2aXWrkGFuH0FLkuXMZ-6AnlD3WQ0YhDC7s5-ZH9LEV0lcIDPX5osNkHIh37ZpZH3OUEndrF0N0uIBqgwNnADr5ulI1poBAtVovYJ2ie8dIIlLN0LG5qRJX6_hIGTQB1BkpwGO0c=w16383",
+  "files": [
+   [
+    "25_Теория ГСЧ.pdf",
+    "https://drive.google.com/open?id=1iwnNfHoySIbHMc7nhaSgIhmJ8ccCDKjf"
+   ],
+   [
+    "ДЗ_25_21.pdf",
+    "https://drive.google.com/open?id=1vbuL2fGq50BCTNu886k8--ZaX_RusF2z"
+   ]
+  ]
+ },
+ "rabota-26-massivy-ukazateley": {
+  "slug": "практика/работа-26-массив-указателей",
+  "title": "Массив указателей",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72v_QD6QhRCvNf6c5IT_JmfvyZ33D9I_sPCQJwxLYCQMzUVvcoSFzvwZP3eN96zDvQSYzbP9ylLr3M5Q493mXc4lcZA0x3DjTNV-vjcV4-NijdI0PES_qxP0JOf4rSaqfBzZe3tPVtxmFiJ8SzSc3f9G8yxuMHvYmKl8=w16383",
+  "files": [
+   [
+    "Двумерный массив как массив указателей.pdf",
+    "https://drive.google.com/open?id=1qf-GSzuXTTI1UInz5o0c2S9_hHDyxpHL"
+   ]
+  ]
+ },
+ "rabota-27-rekursiya": {
+  "slug": "практика/работа-27-рекурсия",
+  "title": "Рекурсия",
+  "banner": "https://sites.google.com/sitesv-images-rt/AMxu72tzggu1hqFNtjARx0DJm1slZONF1x1Z2aXWrkGFuH0FLkuXMZ-6AnlD3WQ0YhDC7s5-ZH9LEV0lcIDPX5osNkHIh37ZpZH3OUEndrF0N0uIBqgwNnADr5ulI1poBAtVovYJ2ie8dIIlLN0LG5qRJX6_hIGTQB1BkpwGO0c=w16383",
+  "files": []
+ }
+}
