@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа с Git — практикум по Си</title>
+<meta name="description" content="Работа с Git">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../praktika/index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа с Git</h1>
+      
+      <div class="doc-body"><p>Git — это самая широко используемая система управления версиями, позволяющая отслеживать изменения, вносимые в код с течением времени, и выполнять откат к определенным версиям, а также поддреживать совместную работу над проектом. Эти функции обеспечивают git-репозитории программного кода.</p><p>GitHub — это платформа для совместной работы, использующая <a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.github.com%2Fget-started%2Fquickstart%2Fgithub-glossary%23git&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw03mvXOWdtREVv6EHCX9b96">Git</a> для управления программными репозиториями с удаленным хранением . В нашем курсе использование Git нацелено на синхронизацию домашнего репозитория программного проекта с рабочими проектами в компьютерных классах.</p><p>Чтобы начать работу с Git в Visual Studio нужно создать собственный репозиторий на GitHub, либо через веб-интерфейс GitHub или через среду MVS (меню Git и пункт &lt;Создать репозиторий Git&gt;):</p><h2>Подключение собственного GitHub репозитория к среде разработке MVS</h2><img src="https://sites.google.com/sitesv-images-rt/AMxu72tFrGJphIBzeCx5Q1EbwwMnMM5jrOw26LUh1SXCg2cu7w0R4dG33cvBKS7Zp1OiCpQlOb0zBezgbYkzsBIzpRSrlCRJNbrTv-Q8eN2TNwieyKZc2FP23-NCNBpADp-vGFmFpOIgDAb7QqmVGUWw28LceEPwTUJ1w5uU2Yf9mSzbS23NRuOcqSeIXSGMaf3bgsRCYpdpDKydolO27H8-0dxyEaMlRf_O4Sf6GZPf_dQ=w1280" alt="" loading="lazy"><p>Следует понимать, что Git имеет собственный локальный репозиторий, отдельный от папки проекта, создаваемого MVS, а Github предоставляет удаленный репозиторий, управляемый Git.</p><p>После создания репозитория Git или <a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.microsoft.com%2Fru-ru%2Fvisualstudio%2Fversion-control%2Fgit-clone-repository%3Fview%3Dvs-2022&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2Z_ItG5Lp9qUOhON3Esfs1">клонированного</a> репозитория Visual Studio обнаруживает репозиторий Git и добавляет его в список локальных репозиториев в меню Git. После этого вы можете быстро получить доступ к репозиториям Git и переключаться между ними.</p><p>Основная часть любого рабочего процесса Git заключается в изменении файлов и фиксации изменений в этих файлах. Внесите изменения в файл, сохраните его, перейдите на вкладку "Изменения Git" и <a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.microsoft.com%2Fru-ru%2Fvisualstudio%2Fversion-control%2Fgit-make-commit%3Fview%3Dvs-2022&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw16Y1FoF4RA2PU-GBq4nQns">зафиксируйте</a> это изменение.</p><h3>Добавление файлов проекта к подключенному репозиторию</h3><img src="https://sites.google.com/sitesv-images-rt/AMxu72uF7kqBjgyQn-2sqgKFreh6IhhrpgAGjybfUbXDF2MKmFEUf0x8lki0x4-79EuuW9LLIx95t4MjYXkdwuZCxVd4Gp8tYsG41Ubj8Xwx64QHG_rkWBjKG4SPHjXsukn_H4iuDVMuXgf4K1R2PNC_o6w60nOKQ50558URRE8oN5G9NxfSIk4d0rxEmOkHw8aqUIlY2LJ1mOp3ykLDPcE4ftxKO8gIOhMnAETRzjdLY88=w1280" alt="" loading="lazy"><p>Для удаленной работы с проектом используется клонирование репозитория. (После входа Visual Studio через диалоговое окно клонирования репозитория, в котором в окне "Открыть из GitHub " перечислены все репозитории, к которым у вас есть доступ. Выберите нужный, а затем нажмите кнопку "Клонировать". Если список репозиториев не отображается, введите расположение репозитория и нажмите кнопку "Клонировать".</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72ueEMPQ1mN8nURhR07stk-ooos-a9A_M47pBK_6jy40uC_k_NjxsilAGjRznnJaLPpir8cJm-817Rq8Jp1eOaOlgt7ou4k8f0cB6vi9VsDTt0ga4PEoZCPH-d26J7l-jw7G9T4AyC3AwjmQj-i33UyrXZsBjdKGb2e5OKL3gZrL6o4bhHORZ9gxtfAxRdDxOaa9P2mG5pamwlDsQ1lh_0r3SeZ6WBW38OzS_53ZP2o=w1280" alt="" loading="lazy"><p>Затем Visual Studio представляет список решений в репозитории. Выберите решение, которое вы хотите загрузить или открыть представление папок в <a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.microsoft.com%2Fru-ru%2Fvisualstudio%2Fide%2Fuse-solution-explorer%3Fview%3Dvs-2022%26preserve-view%3Dtrue&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw26UKFYhbhDCJZ43XdCTHVi">обозревателе решений</a>.</p><p><em>При необходимости </em><em>представление папок по умолчанию можно изменить на представление решения из меню Git . Для этого выберите Параметры&gt;Система управления версиями&gt;Глобальные параметры Git&gt;Автоматически загружать решение при открытии репозитория Git.</em><em></em></p></div>
+    </article>
+    
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

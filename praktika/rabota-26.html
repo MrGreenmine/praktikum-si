@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа 26. Массив записей — практикум по Си</title>
+<meta name="description" content="Лабораторная работа 26: Массив записей. Неделя 18.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Практика</li><li aria-current="page">Работа 26. Массив записей</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа 26. Массив записей</h1>
+      
+      <p class="badges"><span class="badge badge-old">прежняя нумерация: Работа 21</span><span class="badge badge-week">неделя 18</span></p><div class="doc-body"><p>Цель работы - закрепление навыков работы с массивами и механизма передачи параметров</p><h3>Теоретическая справка</h3><p class="file-card"><a class="file" href="https://drive.google.com/open?id=1zLzXYnvZkct0g15qVFaITQlmSUGlDqiW" target="_blank" rel="noopener"><span class="file-ic">PDF</span><span class="file-nm">21_Массивы структур.pdf</span></a></p><h2>Задания и указания по их выполнению</h2><img src="https://sites.google.com/sitesv-images-rt/AMxu72s01zVmodLqc6ugdM4otivEALE20YDuo3k8RjILulea4Vo0NhaPv0YbUnw6uMXXUkXJC0O3igDp1NEu2IYxspGm0GLBjiqzLFycKEXWLj4l0OvISEpKO_C-CwxyjCHPE0A4Y1UkguWkjc-xjKe4PM0j4nGHdcFr7flfHpSoH73nCmzM8yXI3rjBZ86KlHa4pzl-zCl5dfDOpIRVtvNKn5Jz3HynVHTKLcvy9BmNbtA=w1280" alt="" loading="lazy"><p>Для хранения информации о строительном материале создайте структурный тип данных:</p><pre><code>typedef struct Cornice {
+int length;
+int ceilingWidth;
+int wallHeight;
+char material[20];
+} cornice_t;</code></pre><p><br></p><p>Создайте статический массив записей:</p><p>cornice_t cornices[SIZE];</p><p>или динамический массив записей:</p><p>cornice_t *corns;</p><p>corns=(cornice_t *)malloc(SIZE * sizeof(cornice_t));</p><p>Работа выполняется по индивидуальному варианту из работы 18. Реализованная программа должна включать интерфейс с пользователем в виде меню, позволяющего выполнить</p><ul><li><p>загрузку данных и файла</p></li><li><p>изменение выбранной пользователем записи</p></li><li><p>поиск записи в массиве по одному полю, значение которого задал пользователь</p></li><li><p>сортировка массива по выбранному пользователем полю</p></li><li><p>сохранение измененного массива записей в новый файл.</p></li></ul><p>Для каждой операции должна быть реализована отдельная функция.</p><h3>Задание 1. Реализуйте создание, инициализацию и вывод значений полей массива структур "строительный материал"</h3><p>1. Инициализируйте массив записей случайными значенями:</p><pre><code>void fillCornicesArray(cornice_t cornices[], int size) {
+srand(time(NULL));
+for (int i = 0; i &lt; size; i++) {
+cornices[i].length = getRandomNumber(1, 10);
+cornices[i].ceilingWidth = getRandomNumber(1, 5);
+cornices[i].wallHeight = getRandomNumber(2, 8);
+strcpy(cornices[i].material, getRandomString(10));
+}
+}</code></pre><p>или константными:</p><pre><code>cornice_t cornices[SIZE] = {
+{10, 5, 3, "Wood"},
+{8, 4, 2, "Aluminium"},
+{12, 5, 4, "Plastic"},
+{6, 3, 2, "Steel"},
+{9, 6, 3, "Metal"}
+};</code></pre><p>2. Реализуйте функции :</p><ul><li><p>заполнения полей массива: void fill_array(cornice_t *, int size) </p></li><li><p>печати значений полей массива: void print_array(cornice_t *, int size)</p></li><li><p>печати значений полей одной записи: void print_cornice (cornice_t ) { </p></li></ul><pre><code>printf("| %d || %d || %d || %s |", cornice.length, cornice.ceilingWidth, cornice.wallHeight,cornice.material );
+}</code></pre><h3>Задание 2. Создайте функцию поиска и сортировки для заданных полей структуры</h3><p>2.1 Реализуйте функцию поиска, возвращающую найденную в массиве запись:</p><pre><code>cornice_t* search_material(cornice_t *cornices, int size, char* material) {
+for (int i = 0; i &lt; size; i++) {
+if (strcmp(cornices[i].material, material) == 0)
+return (cornices+i);
+}
+return NULL;
+}</code></pre><p>2.2 Реализуйте функцию сортировки по площади материала с использованием qsort()</p><p>2.2.1 Напишите функцию сравнения для qsort():</p><pre><code>int compare(const void *a, const void *b) {
+const cornice_t *corniceA = (const cornice_t *)a;
+const cornice_t *corniceB = (const cornice_t *)b;
+// Расчет площади для каждой записи
+int areaA = corniceA-&gt;length * corniceA-&gt;ceilingWidth;
+int areaB = corniceB-&gt;length * corniceB-&gt;ceilingWidth;
+// Сравнение площадей
+if (areaA &lt; areaB) {
+return -1;
+} else if (areaA &gt; areaB) {
+return 1;
+}
+return 0;
+}</code></pre><p><br></p><p>2.2.2 Используйте вызов функции сортировки</p><pre><code>// Сортировка массива по площади
+qsort(cornices, SIZE, sizeof(cornice_t), compare);</code></pre><p><br></p><h3>Задание 3. Реализуйте запись и чтение массива структур в/из файла </h3><pre><code>int input_file (char* filename, cornice_t* arr);
+int output_file (char* filename, cornice_t* arr, int n);</code></pre><h3>Разместите проект в репозитории, включив readme.md</h3><p># **База данных (Название) **</p><p>Консольное приложение для создания, хранения и управления информацией о </p><p>---</p><p>## 🎯 **Назначение**</p><p>*[Опишите здесь, зачем создан проект и какие образовательные/практические цели преследует]*</p><p>**Пример:** </p><p>Проект демонстрирует практическое применение структур данных, файлового ввода-вывода и алгоритмов поиска/сортировки в языке C. Может использоваться как учебный пример или основа для персонального каталога репозиториев.</p><p>---</p><p>## 📋 **Функциональные возможности**</p><p>### **Основной функционал:**</p><p>- ✅ **CRUD-операции:** Создание, чтение, обновление, удаление записей</p><p>- ✅ **Поиск:** По названию проекта и количеству проблем</p><p>- ✅ **Сортировка:** По количеству звёзд (убывание)</p><p>- ✅ **Сохранение:** Бинарный формат для долговременного хранения</p><p>- ✅ **Консольный интерфейс:** Интерактивное меню с 8 командами</p><p>### **Структура данных проекта:**</p><p>| Поле | Тип | Описание |</p><p>|------|-----|----------|</p><p>| `name` | `char[100]` | Название проекта |</p><p>| `description` | `char[256]` | Краткое описание |</p><p>| `language` | `int` | Код языка программирования |</p><p>| `stars` | `float` | Количество звёзд |</p><p>| `forks` | `int` | Количество форков |</p><p>| `problems` | `int` | Количество открытых проблем |</p><p>---</p><p>## 🏗️ **Архитектура проекта**</p><p>### **Модульная структура:**</p><p>```</p><p>src/</p><p>├── main.c # Точка входа, управление меню</p><p>├── database.h/c # Модель данных и операции</p><p>├── fileio.h/c # Работа с файлами</p><p>└── utils.h/c # Вспомогательные функции</p><p>```</p><p>### **Ключевые алгоритмы:**</p><p>1. **Поиск:** Линейный поиск по полю `name`</p><p>2. **Сортировка:** Быстрая сортировка через `qsort()` по полю `stars`</p><br><p>*[Добавьте здесь описание основных функций и их взаимодействия]*</p><p>---</p><p>## 🚀 **Сборка и запуск**</p><p>### **Требования:**</p><p>- Компилятор C (GCC/Clang/MSVC)</p><p>- Стандарт C99 или новее</p><br><p>### **Инструкция по сборке:**</p><p>*[Опишите здесь процесс сборки]*</p><p>**Пример:** </p><p>```bash</p><p># 1. Клонирование репозитория</p><p>git clone [URL-репозитория]</p><p># 2. Переход в директорию проекта</p><p>cd github-projects-db</p><p># 3. Компиляция</p><p>gcc -std=c99 -o app src/*.c</p><p># 4. Запуск</p><p>./app # Linux/macOS</p><p>app.exe # Windows</p><p>```</p><p>### **Использование:**</p><p>1. Запустите программу</p><p>2. Следуйте инструкциям в консольном меню</p><p>3. Для выхода выберите пункт 7</p><p>4. **Не забудьте сохранить данные перед выходом**</p><p>---</p><br><p>## 🤝 **Вклад в проект**</p><p>*[Опишите здесь, как можно поучаствовать в развитии проекта]*</p><br><p>**Пример структуры:**</p><p>- **Сообщения об ошибках:** через Issues с подробным описанием</p><p>- **Предложения по улучшению:** обсуждение в Discussions</p><p>- **Pull Requests:** приветствуются с понятным описанием изменений</p><p>- **Требования к коду:** соблюдение стиля, комментарии к сложным участкам</p><br><p>### **Планируемые улучшения:**</p><p>- [ ] Добавление поиска по диапазонам</p><p>- [ ] Поддержка экспорта в CSV/JSON</p><p>- [ ] Улучшение интерфейса пользователя</p><p>---</p><p>**Автор:** [Ваше имя и группа] </p><p>**Курс:** [Название курса] </p><p>**Год:** 2024 </p><p>**Лицензия:** MIT </p><br><p>*Проект создан в образовательных целях*</p></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="rabota-25.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Работа 25. Массивы указателей</span></a><a class="pager-next" href="dop/rabota-27.html"><span class="pager-dir">следующая →</span><span class="pager-title">Работа 27. Связанный список</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа 17. Работа с указателями — практикум по Си</title>
+<meta name="description" content="Лабораторная работа 17: Работа с указателями. Неделя 11.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Практика</li><li aria-current="page">Работа 17. Работа с указателями</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа 17. Работа с указателями</h1>
+      
+      <p class="badges"><span class="badge badge-old">прежняя нумерация: Работа 12</span><span class="badge badge-week">неделя 11</span></p><div class="doc-body"><p>Цель работы - получение навыков использования указателей</p><p class="file-card"><a class="file" href="https://drive.google.com/open?id=1TPblhPdagSx8v_b8lfZqAUt_hsWweMam" target="_blank" rel="noopener"><span class="file-ic">PDF</span><span class="file-nm">12_Указатели.pdf</span></a></p><h2>Задания и указания по их выполнению</h2><h3>Задание 1. Определите объем памяти, выделяемой под указатель на переменные типа char, int, double. </h3><p>Под сам указатель (там, где хранится адрес) также должна быть выделена память. Объем этой памяти можно узнать с помощью функции sizeof():</p><p>int *pi, i=5;</p><p>float *pf, f=2.1f;</p><pre><code>printf("%lu\n", sizeof(pi));
+printf("%lu\n", sizeof(pf));</code></pre><p>Под указатели всех типов выделяется одинаковый объем памяти, т. к. размер адреса не зависит от типа, а зависит от вычислительной системы. Однако по типу данных определяется, сколько ячеек памяти занимает значение, на которое ссылается указатель, и через сколько ячеек начнется следующее значение.</p><h3>Задание 2. Проанализируйте приведенный ниже код. Объясните результат. </h3><pre><code>int main()
+{
+float PI=3.14159,*p1,*p2;</code></pre><p>p1=p2=&amp;PI;</p><pre><code>printf("По адресу p1=%p хранится *p1=%g\n",p1,*p1);
+printf("По адресу p2=%p хранится *p2=%g\n",p2,*p2);
+}</code></pre><p>Обратите внимание на спецификатор формата %p. Он используется для вывода значений указателей в функции printf. Но поскольку указатель – это адрес, т. е. целое положительное число, то в зависимости от ситуации можно использовать любые спецификаторы целочисленных переменных. Для наглядности результатов используйте спецификатор %x – для вывода шестнадцатеричном коде.</p><h3>Задание 3.Выполните приведенный ниже код и определите, на сколько увеличится значение, на которое указывает ра. Полученные результаты поясните. </h3><p>int *pа, x=5;</p><p>pа = &amp;x;</p><pre><code>printf("По адресу%p хранится *ptr=%g\n",pa,*pa);</code></pre><p>pа++;</p><pre><code>printf("По адресу %p хранится *ptr=%g\n",pa,*pa);</code></pre><p>pа--;</p><pre><code>printf("По адресу %p хранится *ptr=%g\n",pa,*pa);</code></pre><ol><li><p>Измените тип данных на double и посмотрите, как изменятся значения (на сколько байт смещается указатель после инкремента\декремента)</p></li><li><p>Измените тип данных на char и сравните результаты с предыдущими (на сколько байт смещается указатель после инкремента\декремента)</p></li><li><p>Исследуйте изменение указателей типа long double, short unsigned int, _Bool.</p></li></ol><p>Перед выполнением операций обязательно выполните инициализацию указателей через разыменование (&amp;) инициализированных переменных того же типа.</p><h3>Задание 4. Исследуйте перемещение по массиву с помощью указателя. Объявите и инициализируйте массив на 10 элементов.</h3><pre><code>float array[10]={1.1, 2.2, 3.3, 4.4 ...};</code></pre><p>float *ptr_a;</p><p>4.1 Убедитесь, что имя массива в действительности является его адресом, т.е напечатайте значения array, &amp;array[0], &amp;array; с помощью спецификатора %p.</p><p>4.2 Установите указатель на начало массива ptr_aи выполните операции, одновременно напечатав значение указателя и то, на что он указывает (*ptr_a):</p><p>ptr_a ++; ptr_a+4; ptr_a-2</p><p>4.3Напишите цикл прохода по массиву с помощью указателя с прямом порядке с увеличением указателя на 2 </p><p>4.4 Выполните проход по массиву в обратном порядке, предварительно установив указатель на конец массива с использованием операции декремента</p><br><h3>Задание 5. Запустите и исследуйте программу с использованием указателей</h3><img src="https://sites.google.com/sitesv-images-rt/AMxu72syQgVXgkNgevqrnPxQe29ttMNAwJnbNQcZA5mcT2PQIO7nL-M-CTFXKwc3h1WQv1Df-zHFrTzgy-CS2Ga--qN-7S1oKmM0ig1_qhNwpVz9RFlkxEqhhnNgUjMlRJV04KUZ0ZrroruvYDim809dwRYuv1GDqFBI40ItGeVaeiANcdLFBM4TJjmr5hOkOMJ5tMjgF0CgHZEWHwzNfsA=w1280" alt="" loading="lazy"><p>Листинг программы побайтового вывода целого числа</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72s2_ycTO1sdaipCSCV5H2NVVNs2kk5ejzZw_nVTk48d6O_iNiNTzuzUaJTdTUGyso04EiW2v2D4Dx-ACjYrNXPLTJKFITmxwd9VtFaU7OeCxEPQ2_Yk1UbG2o2BpVbEeRnmBL2E0vyk7k3Iua8TcIbdKweeqnmmsgBCHtmkmnbHOy4AFYWrMxrDx-MIEdLWOsdLZd0bvwapzdQd=w1280" alt="" loading="lazy"><p>Рисунок. Распределение байтов одного слова в памяти -А ) с наименьшего адреса ("big-endian" - обратное размещение байтов или MSB – Most Significant Byte) – байт с наибольшей значащей частью </p><p> B) с наибольшего адреса ("little-end" - прямое размещение байтов))</p><p>1. Сделайте вывод о порядке размещения байтов в текущей системе. </p><p>2. Усовершенствуйте программу так, чтобы она могла побайтно выводить переменные любого типа.</p><p>3. Сравните код рационального числа, например 12345.0 заданного переменными различного типа int, float и double </p><h3>Домашнее задание ***</h3><p>Напишите программу, которая вычисляет размер основных типов данных в байтах:</p><p>1) char</p><p>2) short int</p><p>3) unsigned short int</p><p>4) int</p><p>5) unsigned char</p><p>6) wchar_t</p><p>7) long long int</p><p>8) size_t</p><p>9) float</p><p>10) double</p><p>11) signed int</p><p>12) </p><p>!НЕЛЬЗЯ ПОЛЬЗОВАТЬСЯ sizeof и КОНСТАНТАМИ ИЗ limits.h и float.h</p></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="rabota-16.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Работа 16. Генерация случайных чисел</span></a><a class="pager-next" href="rabota-18.html"><span class="pager-dir">следующая →</span><span class="pager-title">Работа 18. Передача массива в функцию</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

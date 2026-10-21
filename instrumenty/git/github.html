@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа с GitHub — практикум по Си</title>
+<meta name="description" content="Работа с GitHub">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../../praktika/index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../../praktika/dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="../../praktika/dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../../praktika/shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../../index.html">Главная</a></li><li aria-current="page">Работа с Git</li><li aria-current="page">Работа с GitHub</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа с GitHub</h1>
+      
+      <div class="doc-body"><h1>Инструкция по созданию программного репозитория на github</h1><ol><li><p>Создайте личный аккаунт на https://github.com/.</p></li><li><p>Создайте новый репозиторий</p></li></ol><p><a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.github.com%2Fget-started%2Fquickstart%2Fgithub-glossary%23repository&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw1V5e-0y4z3vokPEDhsZSFO"><strong>Репозиторий</strong></a><strong> — это проект, содержащий файлы и папки, который отслеживает версии файлов и папок.</strong><strong></strong></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72vi6HVcLk8wwfEDbFjDJy4_taNY9poc4VTQXItQsGdha0CjbzfT7JCOYvwL5edL8jaW4HKvC7kK7xPE7wf1BPkpUK0f2WuHqEMk8lop21zKWqboedgbNztiwVDGPY5orNHIJqxVK-ibLte_4AaOWrcKVpjm05NftNBw8wgYEK_xa3wkSANrHU9aHbFjv7WYt_bY8Vke1nXhPDJNsKIRdfbmapSHFtIvw8urDg3OdlE=w1280" alt="" loading="lazy"><p>3. Заполните название, описание, отметьте доступность и прочее</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72sZjKwlJOZt31qVRyoxCOkQGFS6fMW1nXHEk1dS0Ru7Ws1PSU0J2OxR2JApeMFz8LvmB3JiRVCu6jQ_HlflhHEOckgepoQPQ5fLk9kYy3NSwnTjYuR6wfIHXQAtr9cAznIji2IX9UM8SuXdjzUnNdHiYAE0_JG1DJ1t4IB_xzGDj54xBU-sat4ECWNYs1dMUsz7wY5A2rFHRHNOPUnFqehhrTzXnbUZ3pYX2gwh=w1280" alt="" loading="lazy"><h2>Создание новой ветки</h2><p><em><strong>Ветка — это еще одна версия вашего репозитория. По умолчанию, репозиторий имеет одну ветку </strong></em><em><strong>main</strong></em><em><strong>, и она считается главной. Использование новых веток, позволяет одновременно иметь разные версии проекта, т.е. вносить новые изменения без потери предшествующих вариантов кода.</strong></em></p><ol><li><p>Перейдите на вкладку <strong>Code</strong> (Код) .</p></li><li><p>Нажмите на раскрывающийся список <strong>main</strong>.</p></li><li><p>В поле введите название вашей новой ветки: <em>my-first-branch</em>.</p></li><li><p>Щелкните <strong>Create branch: my-first-branch</strong>, чтобы создать свою ветку.</p></li></ol><p><em>Создание ветки позволяет редактировать проект без изменения основной. </em></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72vsuBLv0sTCE03nMrRDNQPwons1UCYHyTUUXAyrkvRwLxk2gopyQgx28tP_qM74T6Rh21wIuckpB_Gk517rsg3rn_a29vPdLOL44NgpsHsPob_uD7JnCFlj1fXWEtPVOJcsqjAEIEkMh4zsK-nU2oJZW0JALt9NCkF87OS2qALAzrjGjV0XRuYEk50pqJZ97-X51qkKV8DK9f9-GmJJRT3H0JAAijo2EDQcEyxmWe8=w1280" alt="" loading="lazy"><h2>Фиксация изменений</h2><p><a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.github.com%2Fpull-requests%2Fcommitting-changes-to-your-project%2Fcreating-and-editing-commits%2Fabout-commits&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw2PJFyjdkOgIabGzNiy78ed"><em><strong>Коммит</strong></em></a><em><strong> — это сохраненный набор изменений в файлах и папках проекта (зафиксированное изменение состояния репозитория или текущее сохранение репозитория к которому можно вернуться).</strong></em><em><strong></strong></em></p><ol><li><p><em><strong>Н</strong></em>а вкладке <strong>Code</strong> убедитесь, что вы находитесь в новой ветке my-first-branch.</p></li><li><p>Справа выберите раскрывающийся список <strong>Add file</strong> и нажмите <strong>Create new file</strong>, чтобы создать новый файл</p></li></ol><p>После этого появится интерфейс редактирования файла в верней части которого в поле <strong>Name your file...</strong> введите имя файла с расширением</p><p>В области «<strong>Edit new file</strong>» можно писать код. По завершению некоторого этапа написания кода создайте коммит, для этого внизу страницы введите короткое сообщение коммита, описывающее сделанные вами изменения. Это сообщение помогает другим узнать, что включено в вашу фиксацию.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72tQwZ771_wfWOeivvFd_yl3UN0fQ9KE6HwLdLEjckiFJVqd-0gliQramtcNKhvwG1RE8QXhGD-sTIMnQJIWyMC4RTdIPCH6Xv3_qiT7Jt4MJsk0WoHlu7Ob9lnNcqJINwgo1cLHpAfLh2Ze-AsJ3uDPwaE8gVFDRzaypHYUYdsbLEgS6vlLM1wx5GOVO-RoOKliWjqTHSpUXp4OpMx75zSIC5hGdpoezUmn-7XHBFI=w1280" alt="" loading="lazy"><h2>Создание запроса на вытягивание </h2><p><strong>pull request - </strong><strong>спец. процесс внесения сделанных изменений в общий проект (main) с возможностью их обсуждения. Проводится </strong><strong>до</strong><strong> слияния изменений, сделанных разными участниками проекта. </strong>Если с изменениями возникли какие-либо проблемы, участники команды могут опубликовать в <strong>pull request</strong> отзывы и даже изменять код с помощью дополнительных коммитов. Все эти действия отслеживаются непосредственно внутри процесса <strong>pull request</strong>.</p><p>Возможно, после коммита будет отображаться сообщение, указывающее на недавний переход в Вашу ветку и предоставляющее кнопку с надписью <strong>Compare &amp; pull request</strong> . Это предложение сравнить Ваши изменения с внесенными ранее и создать пулреквест. </p><ol><li><p>Выберите вкладку <strong>pull request</strong> в репозитории.</p></li><li><p>Щелкните <strong>New</strong><strong>pull</strong><strong></strong><strong>request</strong> . В раскрывающемся списке base: убедитесь, что выбран main .</p></li><li><p>Выберите сравнение и в раскрывающимся списоке укажите свою ветвь.</p></li></ol><img src="https://sites.google.com/sitesv-images-rt/AMxu72tqZMA6VifNnNFx3YySV3llHUkd2W92JvpsdsbKmUviuM8cPK_M1AMEHKHVbSHQ5jLBnDV20CDPmbLpSk7zvdqyHCGpAebd-PqKW4KgwXFXN6XLcYgUZ8pZi-pak7c2b9dwMlFpXSKxAF1SgYsmXlcDM7uBfF7_ixkoaLxkXCyyoVrS80BIJ9qk2zxUWlm0GDya1dGEI0k12jh7R5YSwUawwEZ999NDkS71RKLy=w1280" alt="" loading="lazy"><p>В полях ниже</p><p>Напишите заголовок.</p><p>Опишите внесенные изменения.</p><p>Может быть использовано для написания замечаний к Вашему коду</p><p>Щелкните <strong>Create pull request</strong> .</p><h2>Слияние</h2><p><strong>Слияние добавляет изменения, объявленные в </strong><strong>pull</strong><strong></strong><strong>request, </strong><strong></strong><strong>в main или в соотвествующую ветку общего проектного репозитория</strong></p><ol><li><p>Щелкните <strong>Merge pull request </strong>(слить изменения, объявленные в pull request)</p></li><li><p><strong></strong>Щелкните <strong>Confirm merge </strong>(подтвердить слияние)</p></li><li><p>После объединения ветка больше не нужна, удалите ее, выбрав<strong> Delete branch.</strong></p></li></ol></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="../nastroyki-proekta.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Настройки проекта</span></a><a class="pager-next" href="../lokalizaciya.html"><span class="pager-dir">следующая →</span><span class="pager-title">Языковые настройки и локализация</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../../assets/search-index.js"></script>
+<script src="../../assets/app.js"></script>
+</body>
+</html>

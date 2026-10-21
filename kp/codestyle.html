@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CodeStyle — практикум по Си</title>
+<meta name="description" content="CodeStyle">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../praktika/index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Контрольная работа</li><li aria-current="page">CodeStyle</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">CodeStyle</h1>
+      
+      <div class="doc-body"><p>1) сначала прототипы функций, потом main, и лишь потом определение собственных функций</p><p>2) Функция должна иметь осмысленное имя, делать что-то полезное и возвращать значений, т.е. избавьтесь от функций, к-е вызываются единожды внутри другой собственной функций и содержат 2-3 строки кода, выдернутого из контекта, например, print_header() - для 'шапки" таблицы)</p><p>3) программа ведет диалог с пользователем на русском языке (system ("chcp 1251") помогает всем)</p><p>4) приветствие пользователю обязательно и должно включать назначение программы</p><p>5) объявления переменных расположены в начале программы</p><p>6) ИЗБЕГАЙТЕ «МАГИЧЕСКИХ ЧИСЕЛ»</p><p>7) используйте функции только стандартной библиотеки языка Си (стандарт С99), все функции, имена которых включают заглавные буквы "чужие".</p><p>Подробное описание (Источник C Style and Coding Standards. Glenn Skinner. Suryakanta Shah Bill Shannon AT&amp;T Information System Sun Microsystems). <a href="https://google.github.io/styleguide/cppguide.html#Function_Comments">Пример </a>промышленного CodeStyle см.</p><p>1. Правила именования файлов.</p><p>Используйте следующие расширения файлов:</p><p>- для файлов с исходном кодом на языке С - расширение .c;</p><p>- для перемещаемых объектных файлов - расширение .o;</p><p>- для заголовочных файлов - расширение .h;</p><p>- для архивных библиотечных файлов - расширение .a;</p><p><span id="modules"></span>2. Организация программы.</p><p>Разделяйте программы на модули. Модульный код с четким разделением меньше подвержен программным ошибкам, проще сопровождается и легче расширяется. Хотя язык С и не представляет инструментария для разделения программы на модули, разделение на модули можно достичь с помощью методов и соглашений, описанных ниже.</p><p>Модуль – это группа процедур и данных, совместно реализующих некую абстракцию, например: организацию стека или задачу управления памятью и т.д.</p><p>Примечание: модуль состоит из интерфейсной части (в языке С роль «интерфейса» играют заголовочные файлы (файлы с расширением .h) с объявлениями функций, определениями константных значений и структур данных) и определений функций в файлах с исходным кодом (файлы с расширением .с) . </p><p>Старайтесь повсеместно использовать модульный код. Степень модульности определяется исходя из сложности проекта/задачи и производительности обмена между модулями. Пользуйтесь здравым смыслом при распределении задачи на модули и соблюдайте баланс. Для выполнения простых операций использовать макросы препроцессора.</p><p>3. Организация файлов.</p><p>Файл должен разделяться на секции. Секции в файле должны отделяться пустыми строками.</p><p>Хоть формально максимальные требования к размеру файла не предъявляются, не рекомендуется использовать более 300 строк кода в одном файле, так как код будет трудным для восприятия.</p><p>Так же следует избегать слишком длинных строк. Не все терминалы и текстовые редакторы хорошо работают с ними.</p><p>3.1 Заголовочные файлы.</p><p>Порядок разделов для .h файлов выглядит следующим образом:</p><p>а) Идентификатор автора: файл должен начинаться с указания автора кода.</p><p>б) #ifndef: Заголовочный файл часто может подключаться в нескольких файлах. Чтобы избежать многократного включения заголовочного файла в рамках одного проекта используется директива #ifndef. Директива #ifndef проверяет объявление идентификатора, который объявляется после директивы #ifndef. При первом подключении заголовочного файла данные файла используются, при последующих подключениях, директива #ifndef прервет использование данных заголовочного файла. Обычно идентификатор состоит из символа подчеркивания и имени файла. Директива #ifndef должна следовать сразу после указания автора.</p><p>в) Блок комментариев: после #ifndef должен идти блок комментариев, описывающий назначение объектов в файле (функций, глобальных переменных и т.д.). Описание должно быть коротким и по делу.</p><p>для глобальных переменных - продолжение фразы "используется для ...", для функций - глагол-действия (что делает функция)</p><p>г) #includes: После блока комментариев подключаются дополнительные .h файлы.</p><p>д) #defines: далее следуют определения с помощью директивы #defines, относящиеся к модулю в целом, но не к отдельным элементам структур.</p><p>е) typedefs: после определения идентификаторов с помощью #define, идут определения новых типов данных с помощью оператора typedef.</p><p>ж) Декларация структур: если определение директивы #define, относится к глобальным данным (например, флаги слова), то определение должно следовать сразу же после объявления этих данных.</p><p>з) Декларация функций: объявление функций должно идти после декларации структур. Все внешние функции должны быть объявлены, даже те, которые возвращают int или ничего не возвращают (void).</p><p>и) Объявление внешних переменных: далее идет декларация внешних переменных.</p><p>к) Не определяйте статические и глобальные переменные в заголовочных файлах. Декларация переменных в заголовочных файлах часто является показателем плохого распределения кода по файлам.</p><p>3.2 Файлы с исходным кодом.</p><p>Порядок разделов для .c файлов приведен ниже:</p><p>а) Идентификатор автора: файл должен начинаться с указания автора кода.</p><p>б) Блок комментариев: сразу после имени автора должен идти блок комментариев, описывающий содержимое файла (назначение или основные функции программного модуля).</p><p>в) #includes: далее должно идти подключение заголовочных файлов.</p><p>г) typedefs and #defines: после подключения заголовочных файлов должны следовать определения с помощью операторов typedef и #define.</p><p>д) Определение структур: далее идет определение структур.</p><p>е) Глобальные переменные: они должны располагаться после определения структур.</p><p>ж) Объявления функций: далее должна следовать декларация функций. Декларироваться должны только приватные функции. Публичные (библиотечные) функции уже объявлены в заголовочных файлах, которые подключены выше. Хотя С-компилятор и не требует объявления функций возвращающих int, декларировать такие функции считается хорошим тоном.</p><p>з) Определения самих собственных функций:. Каждой функции должен предшествовать блок комментариев. Функции должны следовать в определенном порядке. Лучше если они будут упорядочены сверху вниз, чем снизу вверх. Функции схожего уровня «абстракции» лучше располагать рядом. Функции желательно размещать как можно ближе к месту их вызова. При наличии большого числа функций практически не имеющих взаимосвязи можно располагать их в алфавитном порядке.</p><p>Пример описания функции</p><pre><code>/*
+* проверяет является ли список пустым
+* plist - указывает на начало списка
+* возращает 1, если список пуст, и 0 - в противном случае
+* каждый элемент списка структурного типа List
+*/
+int list_is_empty(List* plist){</code></pre><p>Обратите внимание!</p><ol><li><p>назначение (что делает?)</p></li><li><p>описание передаваемых параметров</p></li><li><p>возвращаемое значение</p></li><li><p>побочные эффекты и другие необходимые пояснения</p></li></ol><p>4. Табуляция.</p><p>а) Каждый новый уровень должен отделяться табуляцией.</p><p>б) Каждая строка должна быть ограничена размером страницы (код не должен переноситься на новую строку).</p><p><br></p><br><p>5. Комментарии.</p><p>Комментарии должны содержать информацию, относящуюся только к коду программы. Комментарии, вводящие в заблуждение, хуже, чем отсутствие комментариев. В комментариях должны быть отражены:</p><p>а) Должны быть хорошо описаны нетривиальные решения и неординарные ситуаций, такие как «побочный эффект». Следует избегать дублирования информации, возникающее при комментировании очевидного кода.</p><p>б) В комментариях должны быть отражены все изменения в функциях, внешних переменных и указателях.</p><p>в) При использовании оператора case следует вводить соответствующие комментарии.</p><p>г) Все объявления должны комментироваться, за исключением декларации одноразовых счетчиков (например, для организации цикла) и очевидных имен констант. </p><p>д) В комментариях не надо писать то, что не нужно для понимания кода.</p><br><p>5.1 Блочные комментарии.</p><p>Блочные комментарии используют для описания содержимого файла, описания назначения функций, структур данных и алгоритмов.</p><p>Блочные комментарии должны использоваться в начале каждого файла и перед каждой функцией.</p><p>Блок комментариев перед функцией должен описывать только ее функционирование и содержать описание входных параметров, алгоритма работы функции и возвращаемых функцией значений.</p><p>Пример блочного комментария:</p><pre><code>/*
+* Файл содержит реализацию стека
+* на основе статического массива
+*/</code></pre><p>5.2 Однострочные комментарии.</p><p>Однострочные комментарии используются для описания неочевидных «условий» и «возвращаемых значений».</p><p>а) Однострочные комментарии должны иметь отступ равный отступу комментируемого кода. Текст комментария должен быть отделен от операторов /* и */ пробелом.</p><pre><code>if (argc &gt; 1) {
+/* получение входного файла из командной строки */
+if (freopen(argv[1], "r", stdin) == NULL)
+perror("can’t open %s\n", argv[1]);
+}</code></pre><br><p>б) Блочный комментарий должен использоваться, когда комментарий не помещается в одну строку.</p><p>5.3 Комментарии, завершающие строку с кодом.</p><p>Данный вид комментариев наиболее часто используется.</p><p>а) Комментарий должен отделяться от конца строки с кодом достаточно далеко.</p><p>б) Все комментарии параметров и локальных переменных должны быть выравнены в один столбец.</p><p>в) Если в блоке кода более чем один комментарий, то коментарии должны быть выравнены в один столбец.</p><pre><code>if (a == 2)
+return (TRUE);/* special case */
+else
+return (isprime(a));/* odd numbers only */</code></pre><br><p>г) Не комментировать каждую строку кода!</p><p>6. Объявления.</p><p>а) Одно объявление в строке, если нужны комментарии к ней.</p><pre><code>int level; /* число уровней */
+int size; /* размер таблицы */
+int lines; /* число строк таблицы */</code></pre><br><p>предпочтительнее давать имена переменным, объясняющих их назначение :</p><pre><code>int size, nrows, ncols;</code></pre><br><p>б) Не смешивайте декларацию переменных и функций, как приведено в примере:</p><pre><code>long dbaddr, get_dbaddr();</code></pre><br><p>в) Не объявляйте локальные переменные с одним и тем же именем во внутренних блоках функции, например:</p><pre><code>void func()
+{
+int cnt;</code></pre><p>...</p><pre><code>if (condition) {
+register int cnt;</code></pre><p>...</p><pre><code>}
+}</code></pre><p><br></p><p>г) В структурах и объединениях (union) объявление каждой переменной должна начинаться с новой строки и сопровождаться комментарием. Открывающаяся фигурная скобка «{» должна быть на одной строке с объявлением структуры или объединения (union). Закрывающаяся фигурная скобка «}» должна быть на отдельной строке и располагаться в ее начале. Например:</p><pre><code>struct boat {
+int wllength; /* water line length in feet */
+int type; /* see below */
+long sarea; /* sail area in square feet */
+};
+/* defines for boat.type */
+#define KETCH 1
+#define YAWL 2</code></pre><br><p>д) При декларации каждой функции необходимо явно указывать возвращаемое значение. Если функция не возвращает значений, то указывается – void.</p><p>е) Определения с помощью typedef используются для «параметризации» программ с целью повышения портабельности и модифицируемости. Используйте typedef для собственных структур, но не "закрывайте" указатели</p><pre><code>typedef char *Mything1;/* Переопредление типа */
+typedef label {</code></pre><p>...</p><p>...</p><pre><code>} *seclebp; /*ТАК НЕ ДЕЛАТЬ!*/</code></pre><br><p>7. Операторы.</p><p>7.1 Простые операторы.</p><p>а) Каждая строка должна содержать не более одного оператора. Не следует делать, как указано в примере:</p><p>argv++; argc--; </p><br><p>7.2 Сложные операторы.</p><p>Сложные операторы – это операторы, которые содержат список операторов заключенных в фигурные скобки «{}».</p><p>а) Список в фигурных скобках должен отступать от оператора на один уровень (tab).</p><p>б) Открывающаяся фигурная скобка должна быть в конце строки начала сложного оператора, а закрывающаяся скобка должна быть на отдельно строке, в столбце, с которого начинается сложный оператор </p><p>Использование фигурных скобок для выделения одиночного оператора, если он является частью структуры операторов, таких как if-else или for, определяется индивидуально. Например:</p><pre><code>if (condition) {
+if (other_condition)</code></pre><p>statement;</p><pre><code>}</code></pre><br><p>в) Операторы if, if-else, if-else if-else должны иметь следующую форму:</p><pre><code>if (condition) {</code></pre><p>statements;</p><pre><code>}</code></pre><p><br></p><pre><code>if (condition) {</code></pre><p>statements;</p><pre><code>} else {</code></pre><p>statements;</p><pre><code>}</code></pre><p><br></p><pre><code>if (condition) {</code></pre><p>statements;</p><pre><code>} else if (condition) {</code></pre><p>statements;</p><pre><code>} else if (condition) {</code></pre><p>statements;</p><pre><code>}</code></pre><br><p>г) Оператор for должны иметь следующую форму:</p><pre><code>for (initialization; condition; update) {</code></pre><p>statements;</p><pre><code>}</code></pre><br><p>В операторе for используйте не более трех переменных. Очень тяжело воспринять организацию цикла при использовании большого количества переменных. Если нужно используйте отдельные операторы условия в теле цикла.</p><p>д) Оператор while должен иметь следующую форму:</p><pre><code>while (condition) {</code></pre><p>statements;</p><pre><code>}</code></pre><br><p>е) Оператор do-while должен иметь следующую форму:</p><pre><code>do {</code></pre><p>statements;</p><pre><code>} while (condition);</code></pre><p>ж) Оператор switch должен иметь следующую форму:</p><pre><code>switch (condition) {
+case 1:
+case 2:</code></pre><p>statements;</p><pre><code>break;
+case 3:</code></pre><p>statements;</p><pre><code>break;
+default:</code></pre><p>statements;</p><pre><code>break;
+}</code></pre><br><p>Каждый оператор switch должен иметь состояние «default». Последний break – избыточен, но его применение желательно. Это избавит от ошибок при добавлении в конец оператора switch нового case. В языке С использование оператора switch желательно минимизировать.</p><p>8. Пустые строки.</p><p>Пустые строки улучшают восприятие кода, объединяя разделы (участки кода) имеющие логическую взаимосвязь. Пустые строки нужно использовать в следующих случаях:</p><p>а) После секции #include.</p><p>б) После блока с #define – константами и #define – макросами.</p><p>в) Между декларациями структур.</p><p>г) Между функциями.</p><p>д) После декларации локальных переменных и между открывающейся фигурной скобкой функции и первой строкой функции с исходным кодом, если в этой строке не декларация локальных переменных.</p><p>9. Пробелы.</p><p>А) Пробелы должны использоваться:</p><ul><li><p>После ключевых слов:</p></li></ul><p>if, switch, case, for, do, while</p><ul><li><p>В списках параметров после запятой:</p></li></ul><pre><code>pow(a, b)
+int func(int a, int b);</code></pre><ul><li><p>Все бинарные операции, за исключением «.» и «-&gt;» должны отделяться от операнда пробелом. </p></li></ul><p>a += c + d;</p><p>a = (a + b) / (c * d);</p><ul><li><p>операторы в условии для цикла «for» должны разделяться пробелами:</p></li></ul><pre><code>for (expr1; expr2; expr3)</code></pre><br><p>B) НЕ используйте пробелы</p><ul><li><p>С Унарными (одноместными) операциями &amp; * + - ~ ! sizeof ++ --, а также Явное указание типа не должно отделяться пробелом:</p></li></ul><p>i++, &amp;a, sizeof(struct file);</p><p>myfunc((unsigned)ptr, (char *)x);</p><ul><li><p>внутри скобок</p></li></ul><pre><code>sizeof( struct file );
+pow( a, b );</code></pre><p>С) Объявляя данных типа указателя или функцию, которая возвращает тип указателя, лучше использовать * рядом с именем данных или именем функции, а не рядом с именем типа. </p><p>char *banner;</p><pre><code>unsigned long long memparse(char *ptr, char **retptr);
+char *match_strdup(substring_t *s);</code></pre><br><p>10. Имена файлов, функций и переменных.</p><p>Договорённости об именовании делают исходный код программы более понятным и читабельным. Дают дополнительную информацию о функциях и идентификаторах, например, в имени констант может быть указан ее тип, что поможет в понимании кода. Ниже приведен ряд правил, которым необходимо следовать:</p><p>а) Имена переменных и функций должны быть короткими, но осмысленными. Однознаковые имена переменных желательно избегать, за исключением «одноразовых» переменных. Имена переменных i, j, К, М, N должны использоваться для целых чисел, с, D, Е для символьных переменных (строк), p - для указателей. Избегайте использовать имя переменной «L», так как в некоторых редакторах трудно отличить L от 1.</p><p>б) К именам указателей должен добавляться символ «p» для каждого уровня ссылки. Например, указатель на переменную db должен иметь имя ptrdb. А указатель на указатель db должен иметь имя pptrdb.</p><p>в) Разделяйте слова в длинных именах подчеркиванием, например: create_panel_item.</p><p>г) Имена констант, определенных директивой #define, должны состоять только из заглавных символов.</p><p>д) Название типов переопределенных с помощью typedef, должны заканчиваться на «_t» или начинаться с заглавной буквы, например:</p><pre><code>typedef enum { FALSE, TRUE } bool_t;
+typedef struct node node_t;</code></pre><br><p>е) Имена «макросов» должны состоять только из заглавных букв, за исключением «макросов» действующих как функции. В последнем случае имя «макроса» должно состоять только из строчных букв.</p><p>ж) Имена переменных и структур должны содержать только строчные буквы.</p><p>Примечание: следует избегать имен переменных, которые отличаются только регистром, например: Foo и FOO.</p><p>з) Индивидуальные элементы enums должны быть уникальными. Уникальность имени переменной можно гарантировать префиксом содержащим имя функции или модуля, в котором они используются, например:</p><pre><code>enum rainbow { rb_red, rb_orange, rb_green, rb_blue };</code></pre><br><br><br></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="oformlenie.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Оформление пояснительной записки</span></a><a class="pager-next" href="../istochniki.html"><span class="pager-dir">следующая →</span><span class="pager-title">Источники</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

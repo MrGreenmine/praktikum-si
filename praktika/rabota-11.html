@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа 11. Структуры данных — практикум по Си</title>
+<meta name="description" content="Лабораторная работа 11: Структуры данных. Неделя 9.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Практика</li><li aria-current="page">Работа 11. Структуры данных</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа 11. Структуры данных</h1>
+      
+      <p class="badges"><span class="badge badge-old">прежняя нумерация: Работа 18</span><span class="badge badge-week">неделя 9</span></p><div class="doc-body"><p>Цель работы - получение навыков работы со структурами данных </p><p class="file-card"><a class="file" href="https://drive.google.com/open?id=1scXp4CGuZt91yaf6WlwNycXF0RQjYcIw" target="_blank" rel="noopener"><span class="file-ic">PDF</span><span class="file-nm">18_Структура.pdf</span></a></p><h2>Задания и указания по их выполнению</h2><h3>Задание 1. Напишите программу, работающую с точками на плоскости </h3><p>1. Реализуйте программу работы со структурой, содержащей запись о координатной точке</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72satmx8DhPHpGs4QV54hG6YM6Dr7XyIU9NqH1BLKZEEZ4W91IM-VNuNHLlBf7TgE0oM0CCfPHGfMuu4e41z2mDtuX6Oe_Z4g6DRo2-WkM5hZhGsJj56HHViwCZOWQeK0PtsGW3LHf-Bhg6SWElamEoCBbSSXFObvqbcAMY0ce01BHhoCYQ6vpqXWTzgHqjTbZ36SarfIPtGl8Ji=w1280" alt="" loading="lazy"><p>2. Реализуйте отображение точки в отдельной функции:</p><pre><code>void put_point(Point z){
+printf("point %c (%.1f, %.1f)", z.name, z.x, z.y); }</code></pre><p>3. Добавьте функцию вычисления декартова расстояния между двумя точками.</p><pre><code>float dist (Point z, Point w)</code></pre><p>4. Добавьте функцию получения новой точки - середины отрезка между двумя точками. Реализуйте обращение к ней из функции main() для вычисления средней из двух введенных пользователем точек. </p><p>5<a href="https://docs.google.com/document/d/1nVCQwxXMY7yZOtHW6Z6HKFeb5k_oBG64KU2fMGU-UE8/edit?usp=sharing">*</a>. Напишите функцию для определения к какой координатной четверти относится точка.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72sbL9DzlWj7orR15y_I2YgZZAVOd18T1NbJGNETJgH4G673lkWUk8Dbl30Bi7qsReNycsqHzDZ7tUwQh6CBhI3UItKGhvt027XmZAoPe-mb28YZ20TVicF43Fy_m1zKhdSYGEh6daP8QiP7YEYLs9q-pXLYwHjBAy9KAq-dWS562z3It7erj8_ggGZspR0dHVmZ4bWqRK_i6-JS=w1280" alt="" loading="lazy"><h3>Задание 2. Напишите программу, которая выводит на экран текущее время. </h3><p>Пояснение к решению</p><p>Для решения этой задачи следует использовать функцию localtime(), которая возвращает указатель на структуру типа tm, описанную в time.h, как:</p><pre><code>struct tm {
+int tm_sec; /* секунды - [0,59] */
+int tm_min; /* минуты - [0,59] */
+int tm_hour; /* часы - [0,23] */
+int tm_mday; /* день - [1,31] */
+int tm_mon; /* месяц - [0,11] */
+int tm_year; /* год от 1900 */
+int tm_wday; /* день недели с воскресенья - [0,6] */
+int tm_yday; /* номер дня с 1 января - [0,365] */
+int tm_isdst; /* флаг летнего времени устанавливается &gt;0, если &lt;=0, то информация недоступна*/
+};</code></pre><p>Поскольку typedef отсутствует, то необходимо полное объявление. Так указатель на структуру tm объявляется как:</p><pre><code>struct tm *mytime;</code></pre><p>В качестве аргумента функции localtime() передается указатель на переменную специального типа time_t, который определен в time.h как long или int в зависимости от системы.</p><p>time_t t;</p><p>Значение переменной t может быть получено функцией time(), которая возвращает текущее календарное время системы. Функцию time() можно вызывать либо с нулевым указателем:</p><p>t = time(NULL);</p><p>либо с указателем на переменную типа time_t:</p><pre><code>time(&amp;t);</code></pre><p>В таком случае по адресу переменной, указатель на которую передан в функцию будет размещено календарное время значением типа time_t.</p><p>Поэтому последовательность шагов получения текущего времени следующая:</p><p>Шаг 1. Объявление служебных переменных:</p><pre><code>struct tm *mytime;// указатель на структуру tm</code></pre><p>time_t t;/*переменная типа time_t для значения системного времени*/</p><p>Шаг 2. Получение системного времени:</p><p>t = time(NULL);</p><p>Шаг 3. Трансформация его в структуру tm:</p><p>mytime= localtime(&amp;t);</p><p>Шаг 4. Использование полученных значений для печати на экран:</p><pre><code>printf("Московское время %02d:%02d:%02d \n",
+mytime -&gt;tm_hour, mytime -&gt;tm_min, mytime -&gt;tm_sec);</code></pre><h3>Задание 2.2 Добавьте вывод следующей информации:</h3><p>1. День недели (словами)</p><p>2. День, месяц и год через разделитель</p><p>3. День (цифра) и месяц (слово)</p><p>4. «сегодня N-й день k года»</p><p>5. «до воскресенья k дней и m часов»</p><p>6. «с первой пары прошло k часов m минут»</p><p>7. «до Нового года осталось m месяцев и k дней»</p><p>8. «до конца пары m минут и s секунд»</p><p>9. «до конца месяца d дней, до конца года m месяцев»</p><p>10. Месяц (римская цифра) и год (число)</p><p>11. Время года и две последние цифры года</p><p>12. «идет k день зимы/осени»</p><p>Для формирования строки используйте функцию sprintf().</p><h3>Задание 2.3 Организуйте вывод на экран так, чтобы сообщения размещались точно в центре строки экрана (80 символов). Для подготовки строки используйте функцию sprintf(). Свободное пространство заполните символами ‘*’ и стилизуйте вывод в виде прямоугольного окна (10 символов).</h3><h3>Задание 3. Реализуйте создание структуры, заполнение полей и вывод на экран. (Создание массива структур в след. работе)</h3><p class="file-card"><a class="file" href="https://drive.google.com/open?id=1TQ2VPOwZlsSptjcFS6IylSmPiy2DUIci" target="_blank" rel="noopener"><span class="file-ic">PDF</span><span class="file-nm">18_ДЗ.pdf</span></a></p></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="rabota-10.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Работа 10. Конструирование функций</span></a><a class="pager-next" href="rabota-12.html"><span class="pager-dir">следующая →</span><span class="pager-title">Работа 12. Запись в файл</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

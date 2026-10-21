@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Создание проекта — практикум по Си</title>
+<meta name="description" content="Создание проекта">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../praktika/index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Инструменты разработки</li><li aria-current="page">Создание проекта</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Создание проекта</h1>
+      
+      <div class="doc-body"><h2>1. Создание проекта</h2><p>Для создания проекта выберите в меню <strong>Файл</strong> пункты <strong>Создать</strong> и <strong>Проект</strong>.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72v-c9ps6dkjeRD-o0Y7jaKzy-xFWWaYoZmBnq4H_HBOGPZZ31bvdP0I8GoSA1tTBRGuyjvkvVithSVp7bed18f782Yi6XZZH9NYrFLtDDY1tOhl0kVW-gJO8xBXVr2QQM-0mDU1cpYJX_p2uFf1Iw0QzBfnZyC_eauRygRAonOqmIsh0tydU-SxKMM2AklyVDK-1Szz_TqdrKt9bztujJAgzpKlCKDBdeTeX231=w1280" alt="" loading="lazy"><p>В области типов проектов <strong>Visual C++</strong> выберите группу <strong>Общие</strong> и щелкните элемент <strong>Пустой проект</strong>.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72v0tjKUp0iVSZI0eT28ErqQeIHnKKq6JGp7vuPnwMY3d1BhRU0GRkYsGd1MXPQxjCoBOK_p-cR72ylje9S9gYejsIZMuuR11hxtnbACsfQbj3kdu_Lb864D9Lx_qkRDL54JAuqOLILkN-hlnxP6eqOUoHE4ugAGrGoVODG_0FKWeS38rR6qy7ozXxthO_lBra9KHNwneMEvTzhyhkkpJmPsVVLmk2jk4E1nB20xq9c=w1280" alt="" loading="lazy"><h3>Настройка проекта</h3><img src="https://sites.google.com/sitesv-images-rt/AMxu72u8CavljIj3o9ywAm-CN-OvU47qeXYOeK_VZ0amfxuBGTjtCsJmy-I8UcDzl0LzyycelyjX15XRnGJnwvH7jWFzfhb1hjE0Rjth8VW3Ahtqz66dMmyaXttjiXpf-TTHKP1elR5bfu8rwRunj-IJHCF_F-a7syNeItK-mxLjZsw5GhJ4ua3AmDF7b_MZPGxhHU7PATQrtHrxZ9o2q1cutwHKpCsQofRCT87OTrt42AA=w1280" alt="" loading="lazy"><p>Введите имя проекта. </p><p>(По умолчанию имя решения, содержащего проект, совпадает с именем проекта, однако можно ввести другое имя. Также можно указать другое расположение для проекта)</p><p> И нажмите кнопку <strong>Создать</strong>.</p><p>После загрузки должно появится окно <strong>Обозреватель решений. </strong>В нем отражается состав проекта, включающий папки <strong>Исходный код, Файлы заголовков и Файлы ресурсов</strong></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72vBW8afw9Rshie2Ck9XOIJFqNTLSj7sySWB6LSlQfGuXBs8IwtMCyL9JMkF1JJ8ensOHQ5KP4eT_0Mg79FKGx1nyb2WunK1ofKH0qhzRlG0_El63ArRgszpECErnWBBRvxuAnC9XwRxs85EIbiUY5fjqajEpBGozSVMPQo7WWNzzCfJ4e2ia9UF33SdsiaxAt9Wg_f6ImoHtN1O_4mBpqDmkWwCkKTGWpTPrLDQJjA=w1280" alt="" loading="lazy"><p><strong>Исходный код - </strong><strong>для файлов на языке С (*.с)</strong></p><p><strong> Файлы заголовков - для </strong><strong>*.h</strong></p><p><strong>Файлы ресурсов - для подгружаемых ресурсов</strong></p><p><br></p><p>Если окно <strong>Обозреватель решений</strong> не открыто, выберите в меню <strong>Вид</strong> пункт <strong>Обозреватель решений</strong>. </p><h2>2. Создание файла для кода программы</h2><p>Чтобы добавить новый исходный файл в проект, выполнив следующие действия.</p><p>1. В окне <strong>Обозреватель решений</strong> щелкните правой кнопкой мыши папку <strong>Исходные файлы</strong> и последовательно выберите пункты <strong>Добавить</strong> и <strong>Новый элемент</strong>.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72vAeBsS2_Ixpy7WSBbJRdPJrVlYexjcbJoTo_OgYvSyi2g6rYeoS25ZPjE9dqLqep_V60ssE1xVwLVT5BPRStZlJbf9lmjP9a6Y1TqyudGyx_OtgaZpCzdXxcnGhCMSlbGXqTExEprTofCVuFH75Bq4NFdVbIDjk1epFGPDcj-iVXsDTIi6mEVKOkm_m1QRF3KmIV6xfKlRucJ04EiZlgCHXbyJ1_dLeVuhno69M_k=w1280" alt="" loading="lazy"><p>2. В узле <strong>Код </strong>выберите элемент<strong> Файл C++ (.cpp)</strong>, введите имя файла и замените расширение на .с и нажмите кнопку <strong>Добавить</strong>.</p><p><br></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72s3kEAPGjXcUfi3Rf1p2itq_dqTGWYBGRqWdRS_OlM1HNFY_PChJfOw8cCIENWcS-coj8VpMjgAjf5kw92Ofa2ujSpwLfKYTG5so3OmVzy0HjNC0ZNQzPgGQKTGiFLq-IaNv8dm1zf7aDhfAUHkWtTXfGpZAPtq9lCM15dVFMo-jyXMiFGERmhmwPib7P_TrLq_jFfn-ZHPAif7jKEqFW74YbYocD4VVYWG8pbnFVU=w1280" alt="" loading="lazy"><p>Файл <strong>name.с</strong> появится в папке "<strong>Исходные файлы</strong>" в окне <strong>Обозреватель решений</strong> и откроется в редакторе Visual Studio.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72u3ydUCOqkuMw_FK5zez-O9DXo8zHERIIqim4cfTQpgq7GHo6PsUpzoREnmuT1HbAgoWcui58MO34JE-K-XCptR96wkJzha16twaUohQvprW-l5zxiUURx5GR7DUxzJECwVL0oghTrXmzuI5WHR6yUr0lBdNfb5GWleSYsDv-yN6fo-idwSLUPmkHqJn49K22YOMtnbRwxC7NHX=w1280" alt="" loading="lazy"><h2>3. Написание простой программы</h2><p>В файле, открытом в редакторе, введите код примера: </p><pre><code>#include &lt;locale.h&gt;
+#include &lt;stdio.h&gt;
+void main()
+{
+setlocale(LC_ALL, "RUS"); // для переключения русской кодировки
+puts ("Моя программа"); // вывод строки
+getchar(); // задержка экрана
+}</code></pre><p>Сохраните файл.</p><h2>4. Проверка работы программы</h2><p>В меню <strong>Отладка</strong> выберите команду <strong>Запуск без отладки </strong>(комбинация клавиш &lt;Ctrl-F5&gt;) или нажмите на зеленый треугольник <strong>Локальный отладчик Windows</strong></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72ukH0FbRfdokUOmFYKUMq-6_tovXWc2Q5rytVxrgMBCnx8sCy7fLsDvkxXq-VWbASDrhs9n2bOMhQPEQQIP3M-DpOkur6Wt1RDMKFuGPs5gUcTlAPmETWfobl1WfyYjs1PeFlq9aNp3F4bct5oYi5fiylIQn_Nhuuy7ZnmfPVfXCq8Gb28UU4MWDGCdAJ0Sk3rejL8KYTi08NKG=w1280" alt="" loading="lazy"><pre><code>// Запуск программы: CTRL+F5 или меню "Отладка" &gt; "Запуск без отладки"</code></pre><p><br></p><pre><code>// Отладка программы: F5 или меню "Отладка" &gt; "Запустить отладку"</code></pre><p><br></p><p>Процесс сборки займет некоторое время, в результате появится консоль</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72ueB9mLD_sVGoIfzHcqvFWkWrw3jQ7YJ-Y8RHrhaebajqSG1OaYXtsqvr8fdCoQoqTHH5jTLW62sX5SxszzgpUts-Y0VgbvD5lej6bVgcTohvdSxxUAm9RkI1wCdF7u4FpaIK-8YPo5DIPAUz9OmfRvCYaDf1PC2Pnt5DLABK2jmsKbHbaeGkiHGL46jR7_cPRgO34aOEIg0tRRFipLAZmmz6TpxGA1WvQr-NGPgEI=w1280" alt="" loading="lazy"><pre><code>// В окне обозревателя решений можно добавлять файлы и управлять ими.</code></pre><p><br></p><pre><code>// В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
+// В окне "Список ошибок" можно просматривать ошибки.</code></pre><p><br></p><pre><code>// Последовательно выберите пункты меню "Проект" &gt; "Добавить новый элемент", чтобы создать файлы кода, или "Проект" &gt; "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.</code></pre><p><br></p><pre><code>// Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" &gt; "Открыть" &gt; "Проект" и выберите SLN-файл.</code></pre><p><em>И если что-то пошло не так ищите ошибку в коде</em></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72tqQgLGTmYT0JyF3_AyWGle0pTvtgjb0Hj7I1_jdLbqTTmo59uB_C-DdPnc1_P6sWooeZnQEp_PP9cF8FgPYGCw3RNAQFAg5bfYCwhfCSIXjhCnZwQHGPEt9m67R_oi3X071_bsS5UM4XYXfvaOpsYy1rECWpejZoQiG3RUu_7k-zxQFyZ1WRCYIjcGf3_EB057POABoysFemVN=w1280" alt="" loading="lazy"><p>Успешное выполнение программы ослеживается внешней системой по коду возврата</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72sTGNIBujD24v-vQA8s7pUfhgPkuFAfcnbpoesJUfoZ9EOReXxPUBYUOu4zDeTFBGb_CbnzB9KCRahXEzQZvsQFvU3Jt3rwMm82lfQTPAYqRuLSjJ6_YguA4e-nwW2PG_fqwOjZ9I9ymWrt9gnujIWS4Q95PcdSoE53NnikbxZygLhDUusVuVdqR3lgV99pQ7vtR1P5F3J2IjrY6yGSfA0w2ZLm2PltnTGp67Dk_iQ=w1280" alt="" loading="lazy"></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="index.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Обзор раздела</span></a><a class="pager-next" href="nastroyki-proekta.html"><span class="pager-dir">следующая →</span><span class="pager-title">Настройки проекта</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

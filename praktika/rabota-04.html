@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Работа 4. Особенности использования данных различного типа — практикум по Си</title>
+<meta name="description" content="Лабораторная работа 4: Особенности использования данных различного типа. Неделя 3.">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../spravochnik/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../spravochnik/primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Практика</li><li aria-current="page">Работа 4. Особенности использования данных различного типа</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Работа 4. Особенности использования данных различного типа</h1>
+      
+      <p class="badges"><span class="badge badge-week">неделя 3</span></p><div class="doc-body"><p>Цель работы: Закрепление навыков применения базовых типов данных </p><h2>Теоретическая справка</h2><p class="file-card"><a class="file" href="https://drive.google.com/open?id=1-qkRZJZ-q1M26Gufybn70eag8b8a0OoJ" target="_blank" rel="noopener"><span class="file-ic">PDF</span><span class="file-nm">Типы данных Справка.pdf</span></a></p><h2>Задания и указания по их выполнению</h2><h3>Задание 1. Ввод и вывод значений разного типа.</h3><p>1. Объявите и инициируйте произвольными значениями переменные типа: </p><pre><code>char c = '!';
+int i = 2;
+float f = 3.14f;
+double d= 5e-12;</code></pre><p>2. Выведите их на экран с помощью функции printf.</p><p>3. Добавьте возможность ввода значений этих переменных с консоли.</p><a href="https://drive.google.com/open?id=1cdCDpLX_7lbiZpD8vxOlNChCfMYRf1O2pCIChh2jW1Q"></a><img src="https://www.gstatic.com/images/icons/material/product/1x/docs_2026_32dp.png" alt="" loading="lazy">Листинг 4.1<p>Задача 1а. Выведите отдельно целую и дробную часть введенного вещественного числа.</p><p>Задача 1б. Выведите шестнадцатеричный и десятичный код введенного символа.</p><p>Задача 1в. Выведите десятичное число, соотвествующее 1/i</p><h3>Задание 2. Поэкспериментируйте с неявным преобразованием типов</h3><p>1. Инициализируйте целую переменную а значением 11, и int b=3. </p><p>2. Объявите переменную x типа int, y – float, z типа double. </p><p>3. Присвойте им значения равные a/b (например: x=a/b)</p><p>4. Выведите на консоль полученные значения x, y и z. </p><p>5. Поясните полученные результаты.</p><p>6. Удалите переменные x, y, z и осуществите вывод значения a/b типа float и double, используя явное преобразование типа: (type)a/b).</p><p>type - базовый тип данных.</p><p>Поэкспериментируйте со скобками, поясните результаты.</p><br><img src="https://sites.google.com/sitesv-images-rt/AMxu72vHKfsUrrtfV4HummWJKqyvFl1vj9CE2U48-HosfHINOnwVS3wtOy4KRk9GOQjoHIvEto2I23VfzuyfAXZaKY1Ngw2fzJoQw1QrYBoB6BkokfZdua9bvYx-4BUEErJEjQ8e8A9hmPRYYNPCO7ToYNSBFcozsqjviPdASxtXkhj3FkyHfP3oz-cVYBzl-itNYD-V73ANY4dRcvkX=w1280" alt="" loading="lazy"><h3>Задание 3. Напишите программу. которая для введенного пользователем целого трехзначного числа N определяет:</h3><h3> a) последнюю цифру числа N;</h3><h3> b) первую цифру числа N;</h3><h3> c) сумму цифр данного числа;</h3><h3>*) записать число "наоборот" (например, дано 123, результат 321) .</h3><p>1. Объявите переменную целого типа, например int n;</p><p>2. Организуйте ввод значения, например scanf("Ваше число%d", &amp;n);</p><p>3. Выделите последнюю цифру, как n%10, а первую как n/100 .....</p><p>4. Организуйте вывод результата с помощью единственной функции printf("Последняя цифра %d, первая - %d, сумма цифра %d .......</p><h3>Задание домашнее. Реализуйте программу для решения следующих задач</h3><p>Оформите решение на github по примеру лаб.2</p><p>Индивидуальные варианты:</p><p>1. Ночное дежурство</p><p>Два программиста, Анна (A) и Борис (B), дежурят ночью. Чтобы было не так скучно, они решили, что будут пить кофе только если кто-то один из них четный (по номеру своего рабочего места). Запишите условие для кофе-машины.</p><br><p>2. Тройной удар</p><p>В игре три героя (A, B, C) атакуют босса. Их специальная способность "Тройной удар" активируется, только если уровень силы каждого из них кратен трем. Запишите условие активации способности.</p><br><p>3. Дележка пиццы</p><p>Друзья заказали пиццу. Они решат, резать ее на 4 или 6 кусков, по простому правилу: если ровно один из них (Ваня A или Петя B) проголодался (его "уровень голода" - четное число), то резать на 4 части. Запишите условие для нарезки на 4 части.</p><br><p>4. Доставка грузов</p><p>Три груза (A, B, C кг) можно погрузить в контейнер, если вес каждого из них кратен пяти. Запишите условие, при котором диспетчерская система дает разрешение на погрузку.</p><br><p>5. Четный индикатор</p><p>Прибор на заводе имеет две контрольные лампы, соответствующие значениям датчиков A и B. Сирена тревоги должна загораться, если ровно одна из ламп показывает нечетное значение. Запишите условие для включения сирены.</p><br><p>6. Команда мечты</p><p>Тренер формирует стартовый состав из трех игроков с номерами A, B и C. Он считает, что это "счастливая" тройка, если сумма номеров игроков делится на три без остатка. Запишите условие для "счастливой" тройки.</p><br><p>7. Шифр счета</p><p>Банк отправляет клиенту секретный код для подтверждения операции. Код будет сгенерирован, если только одна из сумм (A или B) в последних двух операциях была четной. Запишите условие генерации кода.</p><br><p>8. Сигнализация в музее</p><p>В зале музея четыре датчика движения (A, B, C, D). Чтобы избежать ложных срабатываний, сигнализация включает запись только если не менее трех датчиков сработали (система интерпретирует срабатывания как "повторяющееся движение", а не "шум"). Запишите условие включения записи.</p><br><p>9. Выбор маршрута</p><p>На развилке дорог стоит знак. Он показывает направление "Налево", если только одно из двух чисел (A или B), полученных от датчиков traffic flow, является четным. Запишите условие для показа направления "Налево".</p><br><p>10. Фабрика игрушек</p><p>Контроль качества на фабрике игрушек пропускает партию, если вес каждой из трех случайно выбранных игрушек (A, B, C грамм) кратен семи. Это свидетельствует о соблюдении технологических норм. Запишите условие принятия партии.</p><br><p>11. Доступ в коворкинг</p><p>В умном коворкинге два сканера: по лицу (A) и по карте (B). Система открывает дверь, если ровно один из сканеров вернул четный код доступа (такие коды выдаются временным посетителям). Запишите условие открытия двери.</p><br><p>12. Алхимический рецепт</p><p>Чтобы получить философский камень, алхимик должен смешать три ингредиента в строгой пропорции. Реакция запустится, только если масса каждого ингредиента (A, B, C) кратна трем. Запишите условие успешного запуска реакции.</p><br><p>13. Жеребьевка</p><p>Двум командам (A и B) выпали номера. Право первого хода получает та команда, для которой выполняется условие: только один из выпавших номеров четный. Запишите условие для получения права первого хода.</p><br><p>14. Калибровка станка</p><p>Три важнейших параметра станка (A, B, C) должны быть идеально отлажены. Система калибровки выдает сообщение об успехе, если каждое из значений параметра кратно трем. Запишите условие успешной калибровки.</p><br><p>15. Викторина</p><p>На телевикторине два игрока (A и B) нажали на кнопки. Для победы в раунде нужно, чтобы ровно один из них нажал на кнопу с четным номером. Запишите условие победы в раунде.</p><br><p>16. Посадка семян</p><p>Садовод-робот сажает семена в лунки. Лунка считается "идеальной" для посадки, если все три измеренных параметра кислотности почвы (A, B, C) кратны трем. Запишите условие для "идеальной" лунки.</p><br><p>17. Пароль от Wi-Fi</p><p>В кафе Wi-Fi пароль обновляется каждый час на основе двух чисел (A и B). Новый пароль активен, если ровно одно из этих чисел четное. Запишите условие активности пароля.</p><br><p>18. Проверка гипотезы</p><p>Ученый проверяет гипотезу о трех числах. Гипотеза подтверждается, если каждое из трех экспериментально полученных чисел (A, B, C) кратно трем. Запишите условие подтверждения гипотезы.</p><br><p>19. Разделение обязанностей</p><p>Двум роботам (A и B) поручили задание. Они должны начать работу одновременно только в том случае, если номера их заданий таковы, что ровно один из номеров является четным. Запишите условие начала работы.</p><br><p>20. Три кристалла</p><p>Чтобы открыть портал, необходимо зажечь три древних кристалла. Кристалл загорается, если переданная ему энергия (A, B, C) кратна трем. Портал откроется только если загорятся все три кристалла. Запишите условие открытия портала.</p><h2>Пример "Проверка доступа в секретную лабораторию"</h2><br><p><br>Для входа в секретную лабораторию действует сложная система безопасности. Она анализирует два кода, сгенерированные случайным образом при попытке доступа (code1 и code2). Дверь откроется только в том случае, если выполняется одно из двух условий:</p><ol><li><p>Ровно один из кодов является чётным. Это стандартный режим безопасности.</p></li><li><p>Оба кода кратны трём. Это режим повышенного приоритета для избранных сотрудников.</p></li></ol><p>Напишите программу для контроллера двери, которая проверяет, можно ли предоставить доступ.</p><br><h3>Формализация:</h3><p><br>Нужно записать условие, которое является истинным, когда</p><ul><li><p>(code1 чётное И code2 нечётное) ИЛИ (code1 нечётное И code2 чётное) ИЛИ (code1 кратно трём И code2 кратно трём).</p></li></ul><br><h3>Решение на языке C</h3><p>include&lt;stdio.h&gt;</p><pre><code>intmain(){
+int code1, code2;
+int condition;
+// Сообщаем пользователю, что делает программа
+printf("=== СИСТЕМА КОНТРОЛЯ ДОСТУПА ===\n");
+printf("Введите два целых числа (код 1 и код 2): ");
+// Считываем два кода, введенные пользователем
+scanf("%d %d",&amp;code1,&amp;code2);</code></pre><p><br></p><pre><code>// Вычисляем сложное логическое условие
+// 1. Проверяем, что только один код чётный:
+// (code1 четный И code2 нечетный) ИЛИ (code1 нечетный И code2 четный)
+// 2. Проверяем, что оба кода кратны трём
+// 3. Объединяем два условия с помощью логического ИЛИ
+condition =((code1 %2==0&amp;&amp; code2 %2!=0)||
+(code1 %2!=0&amp;&amp; code2 %2==0))||
+((code1 %3==0)&amp;&amp;(code2 %3==0));
+// Выводим результат
+printf("Доступ разрешен (1 - да, 0 - нет): %d\n", condition);</code></pre><p>return0;</p><pre><code>}</code></pre><br><br></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="rabota-03.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Работа 3. Форматированный ввод/вывод</span></a><a class="pager-next" href="rabota-05.html"><span class="pager-dir">следующая →</span><span class="pager-title">Работа 5. Использование функций стандартной библиотеки языка Си</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>

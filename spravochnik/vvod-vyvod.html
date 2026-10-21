@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ввод и вывод — практикум по Си</title>
+<meta name="description" content="Ввод и вывод">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f6feb'/%3E%3Ctext x='32' y='45' font-size='36' font-family='monospace' font-weight='bold' fill='white' text-anchor='middle'%3EC%3C/text%3E%3C/svg%3E">
+</head>
+<body class="">
+<a class="skip" href="#main">К содержанию</a>
+<header class="topbar">
+  <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  <a class="brand" href="../index.html"><span class="brand-mark">C</span><span class="brand-text">практикум<br><b>по Си</b></span></a>
+  <div class="search-wrap">
+    <input type="search" id="search" placeholder="Поиск по сайту…" autocomplete="off" aria-label="Поиск по сайту">
+    <div class="search-box" id="search-box" hidden></div>
+  </div>
+  <button class="theme-btn" id="theme-btn" aria-label="Сменить тему"><span class="ico-sun">☀</span><span class="ico-moon">☾</span></button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Навигация по сайту"><div class="nav-tools">
+      <button type="button" id="nav-expand">Развернуть</button>
+      <button type="button" id="nav-collapse">Свернуть</button>
+    </div><ul class="nav-root"><li class="nav-item" data-depth="0"><a href="../index.html">Главная</a>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Практика</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../praktika/index.html">Организация лабораторных работ</a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-01.html"><span class="nav-num">1</span><span class="nav-txt">Написание и компиляция консольного приложения</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-02.html"><span class="nav-num">2</span><span class="nav-txt">Работа с функцией printf</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-03.html"><span class="nav-num">3</span><span class="nav-txt">Форматированный ввод/вывод</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-04.html"><span class="nav-num">4</span><span class="nav-txt">Особенности использования данных различного типа</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-05.html"><span class="nav-num">5</span><span class="nav-txt">Использование функций стандартной библиотеки языка Си</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-06.html"><span class="nav-num">6</span><span class="nav-txt">Реализация разветвляющихся алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-07.html"><span class="nav-num">7</span><span class="nav-txt">Многоальтернативная обработка данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-08.html"><span class="nav-num">8</span><span class="nav-txt">Организация цикла с параметрами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-09.html"><span class="nav-num">9</span><span class="nav-txt">Реализация циклических алгоритмов</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Контрольная работа</a><span class="nav-note">промежуточная аттестация</span>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-10.html"><span class="nav-num">10</span><span class="nav-txt">Конструирование функций</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-11.html"><span class="nav-num">11</span><span class="nav-txt">Структуры данных</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-12.html"><span class="nav-num">12</span><span class="nav-txt">Запись в файл</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-13.html"><span class="nav-num">13</span><span class="nav-txt">Чтение из файла</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-14.html"><span class="nav-num">14</span><span class="nav-txt">Модульное построение программ</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-15.html"><span class="nav-num">15</span><span class="nav-txt">Работа с одномерными массивами</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-16.html"><span class="nav-num">16</span><span class="nav-txt">Генерация случайных чисел</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-17.html"><span class="nav-num">17</span><span class="nav-txt">Работа с указателями</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-18.html"><span class="nav-num">18</span><span class="nav-txt">Передача массива в функцию</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-19.html"><span class="nav-num">19</span><span class="nav-txt">Динамические массивы</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-20.html"><span class="nav-num">20</span><span class="nav-txt">Работа со строками</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-21.html"><span class="nav-num">21</span><span class="nav-txt">Алгоритмы сортировки</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-22.html"><span class="nav-num">22</span><span class="nav-txt">Рекурсия</span></a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-23.html"><span class="nav-num">23</span><span class="nav-txt">Передача функции по указателю</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-24.html"><span class="nav-num">24</span><span class="nav-txt">Многомерные статистические массивы</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-25.html"><span class="nav-num">25</span><span class="nav-txt">Массивы указателей</span></a><span class="nav-note">вне темы КП</span>
+</li>
+<li class="nav-item" data-depth="1"><a href="../praktika/rabota-26.html"><span class="nav-num">26</span><span class="nav-txt">Массив записей</span></a>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Дополнительные работы</span><span class="nav-note">сверх рабочего плана</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-27.html"><span class="nav-num">27</span><span class="nav-txt">Связанный список</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+<li class="nav-item" data-depth="2"><a href="../praktika/dop/rabota-28.html"><span class="nav-num">28</span><span class="nav-txt">Стеки и очереди</span></a><span class="nav-note">вне рабочего плана</span>
+</li>
+</ul>
+</li>
+<li class="nav-sep" role="separator"></li>
+<li class="nav-item" data-depth="1"><a href="../praktika/shkala.html">Шкала прогресса</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Справочник по языку Си</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="alfavit.html">Алфавит</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="vvod-vyvod.html">Ввод и вывод</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="primery.html">Примеры</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Инструменты разработки</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../instrumenty/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/sozdanie-proekta.html">Создание проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/nastroyki-proekta.html">Настройки проекта</a>
+</li>
+<li class="nav-item" data-depth="1"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Работа с Git</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="2"><a href="../instrumenty/git/github.html">Работа с GitHub</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/lokalizaciya.html">Языковые настройки и локализация</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../instrumenty/ide-mvs.html">Помощник по IDE MVS</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><button class="nav-tog" aria-label="Развернуть">▾</button><span class="nav-group">Контрольная работа</span>
+<ul class="nav-sub">
+<li class="nav-item" data-depth="1"><a href="../kp/index.html">Обзор раздела</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/soderzhanie.html">Содержание пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/oformlenie.html">Оформление пояснительной записки</a>
+</li>
+<li class="nav-item" data-depth="1"><a href="../kp/codestyle.html">CodeStyle</a>
+</li>
+</ul>
+</li>
+<li class="nav-item" data-depth="0"><a href="../istochniki.html">Источники</a>
+</li></ul></nav>
+  <div class="backdrop" id="backdrop"></div>
+  <main class="content" id="main">
+    <ol class="crumbs"><li><a href="../index.html">Главная</a></li><li aria-current="page">Справочник по языку Си</li><li aria-current="page">Ввод и вывод</li></ol>
+    <article class="doc">
+      <h1 class="doc-title">Ввод и вывод</h1>
+      
+      <p class="lead">Функции стандартной библиотеки для ввода и вывода: форматированный вывод <code>printf</code>, ввод <code>scanf</code>, посимвольный ввод <code>getchar</code>, работа с файлами.</p><div class="doc-body"><h2>Ввод данных в языке С осуществляется с помощью функций</h2><p><strong>Для ввода символа:</strong></p><pre><code>int getchar(void); // читает один символ до "пробельного символа"
+_getch() ; // читает только один символ и не отображает его
+_getche(); // читает только один символ и отображает его ("эхо")</code></pre><h3>Для ввода строки:</h3><p><em><strong>char *gets(char *s)</strong></em> - читает множество символов до первого '\n', </p><p>но требует наличия массива s, размер к-го определен в программе, но не ограничен для пользователя, в связи с чем является небезопасной (<em>warning: this program uses gets (), which is unsafe).</em></p><img src="https://sites.google.com/sitesv-images-rt/AMxu72uZjRDxCuOAKuETov1IOYAXc9cJsWDOKT8UFAny5bzaLum2XXmEVPSFyy4kplirQuCZjSaFD-nlXotQ4ujZk86Z8CitpOYjMbfBVs5gqb5qnpcTrI-kx1XLXijSS48U0CGk4AloWTHzferviS9e7GOqpG5ogoMTEjdUzjRY7EGi1c-1gWJlPxvFGPFsIISzCuXqPwdy34DPV_3M56Y=w1280" alt="" loading="lazy"><h2>Для безопасного ввода строки используется:</h2><p><em><strong>char *fgets(char *str, int num, FILE *stream) - </strong></em>читает до num-1 символов или пока не встретится '\n' или EOF из потока stream и помещает их в массив символов, на который указывает str. По окончании считывания в массив str сразу после последнего считанного символа помещается нулевой символ. </p><p>! Символ '\n' после чтения меньше чем num-1 станет частью массива str.</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72tWE9W1RlApZVAwji4T3BxF4FsFbz-2CbN2ZVKkIFrgU0vtpPGxtSCHDC96xW7VPgEBw6rxS2k4LR38YgBkzZxbhFMV25HSQcKlkp9YFo72XMyGrkPE_RUIf6nOn4kk8xArdllOvJf3A8jnKBSeRime0Zvdfy4SMneSTAJeavX059QvSUwWuItTVEAi3iwxQ5H2M50IgcERcdemaSw=w1280" alt="" loading="lazy"><p>При вызове <em><strong>fgets(ptr, N - 1, stdin);</strong></em></p><p>где объявлено<em><strong> char ptr[N]; </strong></em></p><h2>Для различных типов данных используется функция scanf() </h2><p><em><strong>int scanf(const char *управляющая_строка, ...); - читает и интерпретирует вводимые пользователем символы в зависимости от управляющей строки</strong></em></p><p>и возвращает количество тех элементов данных, которым было успешно присвоено значение и в случае ошибки EOF.</p><h3>НО оставляет после себя символы во входном потоке. </h3><p>Так как читает либо до первого разделителя (' ', '\n', '\t') либо заданное число символов</p><img src="https://sites.google.com/sitesv-images-rt/AMxu72tFNz86QbJzmLG3oxEofiZnzWDz85AKkmmY9Idaea5-fwaut-1f_zngHAgMIOpTuY95grDReFXPm49BEfgSKfZ2lXvN8WsVe9lwAX3Xpw0DIT3SVCVwm7yXlKjYcVmXOueKUn9y1Gwg9Z3fPGI_VZPpO7UlReD3IEf560uu6cSZrt6ZGT5rgpGYtMPoxxeQvkzz-Q0oGtBvY7pAseo=w1280" alt="" loading="lazy"><h3>При попытке игнорировать разделители, например, scanf("%d\n", &amp;n) ведет себя по-разному в зависимости реализации стандартной библиотеки, так в VisualStudio будет ждать первого отличного от разделителя (' ', '\n', '\t') символа , который также останется в очереди ввода и будет считан уже следующей функцией ввода.</h3><p>Поэтому лишние символы ввода после scanf(..) для корректной работы нужно "забрать", например, fgets(str, N - 1, stdin);</p><p>и если уверены, что останется только один символ getchar();</p><p>Управляющая строка состоит из символов трех видов:</p><ul><li><p>спецификаторов преобразования,</p></li><li><p>разделителей (пробел, перевод строки, табуляция),</p></li><li><p>других символов, не являющихся разделителями.</p></li></ul><h2>Спецификаторы преобразования</h2><img src="https://sites.google.com/sitesv-images-rt/AMxu72sKorZ095RWfVpm-1veHzluqQTVafD-FHJgQ5yQTVj1NW0KR9tPJD4cSQR2S6HWyQ5zyxvOHKUEXmRSWQH5hYcdMbeE7zGzfCr9o2hxIN_uiJL91S9bH-9fBB4fP0n-K9f66afxDm7cYcpr-bih0oJAdjUFfyXNzfguxDOzFc2zafydKgbBPELs8eoF0c7pl4v6lime4utPwhK0FqI=w1280" alt="" loading="lazy"><p>В отличие от scanf <em><strong>scanf_s</strong></em> требует, чтобы вы указали размеры буфера для некоторых параметров. Укажите размеры для всех параметров со спецификаторами %c , %C , %s , %S или набора элементов управления строкой [] . <em>Размер буфера в символах передается как дополнительный параметр в функции </em><em><strong>scanf_s</strong></em><em>. </em>Он следует сразу за указателем на буфер или переменную. </p><p>Например, </p><pre><code>char c;
+scanf_s("%c", &amp;c, 1);</code></pre><p>ИЛИ явно scanf_s("%1c", &amp;c);</p><p><br></p><h1>Подробно об использовании scanf</h1><h2>Ввод чисел</h2><p>Для чтения целого числа используйте спецификатор преобразования %d или %i. A для чтения числа с плавающей точкой, представленного в стандартном или экспоненциальном виде, используйте спецификатор преобразования %e, %f или %g. (Кроме того, для чтения числа с плавающей точкой стандарт С99 разрешает использовать также спецификатор преобразования %a.)</p><p>Функцию scanf() можно использовать для чтения целых значений в восьмеричной или шестнадцатеричной форме, применяя для этого соответственно команды форматирования %o и %x, последняя из которых может быть как на верхнем, так и на нижнем регистре. Когда вводятся шестнадцатеричные числа, то буквы от А до F, представляющие шестнадцатеричные цифры, должны быть на том же самом регистре, что и литера-спецификатор. Следующая программа читает восьмеричное и шестнадцатеричное число:</p><pre><code>#include &lt;stdio.h&gt;</code></pre><p><br></p><pre><code>int main(void)
+{
+int i, j;</code></pre><p><br></p><pre><code>scanf("%o%x", &amp;i, &amp;j);
+printf("%o %x", i, j);</code></pre><p><br></p><pre><code>return 0;
+}</code></pre><p>Функция scanf() прекращает чтение числа тогда, когда встречается первый нечисловой символ.</p><h2>Ввод целых значений без знака</h2><p>Для ввода целого значения без знака используйте спецификатор формата %u. Например, операторы</p><pre><code>unsigned num;
+scanf("%u", &amp;num);</code></pre><p>выполняют считывание целого числа без знака и присваивают его переменной num.</p><h2>Чтение одиночных символов с помощью scanf()</h2><p>Как уже говорилось в этой главе, одиночные символы можно прочитать с помощью функции getchar() или какой-либо функции, родственной с ней. Для той же цели можно использовать также вызов функции scanf() со спецификатором формата %c. Но, как и большинство реализаций getchar(), функция scanf() при использовании спецификатора преобразования %c обычно будет выполнять построчно буферизованный ввод. В интерактивной среде такая ситуация вызывает определенные трудности.</p><p>При чтении одиночного символа символы разделителей читаются так же, как и любой другой символ, хотя при чтении данных других типов разделители интерпретируются как разделители полей. Например, при вводе с входного потока "x y" фрагмент кода</p><pre><code>scanf("%c%c%c", &amp;a, &amp;b, &amp;c);</code></pre><p>помещает символ x в a, пробел — в b, а символ y — в c.</p><h2>Чтение строк</h2><p>Для чтения из входного потока строки можно использовать функцию scanf() со спецификатором преобразования %s. Использование спецификатора преобразования %s заставляет scanf() читать символы до тех пор, пока не встретится какой-либо разделитель. Читаемые символы помещаются в символьный массив, на который указывает соответствующий аргумент, а после введенных символов еще добавляется символ конца строки ('0'). Что касается scanf(), то таким разделителем может быть пробел, разделитель строк, табуляция, вертикальная табуляция или подача страницы. В отличие от gets(), которая читает строку, пока не будет нажата клавиша &lt;ENTER&gt;, scanf() читает строку до тех пор, пока не встретится первый разделитель. Это означает, что scanf() нельзя использовать для чтения строки "это испытание", потому что после пробела процесс чтения прекратится. Чтобы увидеть, как действует спецификатор %s, попробуйте при выполнении этой программы ввести строку "привет всем":</p><pre><code>#include &lt;stdio.h&gt;</code></pre><p><br></p><pre><code>int main(void)
+{
+char str[80];</code></pre><p><br></p><pre><code>printf("Введите строку: ");
+scanf("%s", str);
+printf("Вот Ваша строка: %s", str);</code></pre><p><br></p><pre><code>return 0;
+}</code></pre><p>Программа выведет только часть строки, то есть слово привет.</p><h2>Ввод адреса</h2><p>Для ввода какого-либо адреса памяти используйте спецификатор преобразования %p. Этот спецификатор преобразования заставляет функцию scanf() читать адрес в том формате, который определен архитектурой центрального процессора. Например, следующая программа вначале вводит адрес, а затем отображает то, что находится в памяти по этому адресу:</p><pre><code>#include &lt;stdio.h&gt;</code></pre><p><br></p><pre><code>int main(void)
+{</code></pre><p> char *p;</p><p><br></p><pre><code>printf("Введите адрес: ");
+scanf("%p", &amp;p);
+printf("По адресу %p находится %c\n", p, *p);</code></pre><p><br></p><pre><code>return 0;
+}</code></pre><h2>Спецификатор %n</h2><p>Спецификатор %n указывает, что scanf() должна поместить количество символов, считанных (до того момента, когда встретился %n) из входного потока в целую переменную, указанную соответствующим аргументом.</p><h2>Использование набора сканируемых символов</h2><p>Функция scanf() поддерживает спецификатор формата общего назначения, называемый набором сканируемых символов (scanset). <em>Набор сканируемых символов</em>представляет собой множество символов. Когда scanf() обрабатывает такое множество, то вводит только те символы, которые входят в набор сканируемых символов. Читаемые символы будут помещаться в массив символов, который указан аргументом, соответствующим набору сканируемых символов. Этот набор определяется следующим образом: все те символы, которые предстоит сканировать, помещают в квадратные скобки. Непосредственно перед открывающей квадратной скобкой должен находиться знак %. Например, следующий набор сканируемых символов дает указание scanf() сканировать только символы X, Y и Z:</p><p>%[XYZ]</p><p>При использовании набора сканируемых символов функция scanf() продолжает читать символы, помещая их в соответствующий массив символов, пока не встретится символ, не входящий в этот набор. При возвращении из scanf() в массиве символов будет находиться строка, состоящая из считанных символов, причем эта строка будет заканчиваться символом конца строки. Чтобы увидеть, как это все работает, запустите следующую программу:</p><pre><code>#include &lt;stdio.h&gt;</code></pre><p><br></p><pre><code>int main(void)
+{
+int i;
+char str[80], str2[80];</code></pre><p><br></p><pre><code>scanf("%d%[abcdefg]%s", &amp;i, str, str2);
+printf("%d %s %s", i, str, str2);</code></pre><p><br></p><pre><code>return 0;
+}</code></pre><p>Введите 123abcdtye, а затем нажмите клавишу &lt;ENTER&gt;. После этого программа выведет 123 abed tye. Так как в данном случае 't' не входит в набор сканируемых символов, то scanf() прекратила чтение символов в переменную str сразу после того, как встретился символ 't'. Оставшиеся символы были помещены в переменную str2.</p><p>Кроме того, можно указать набор сканируемых символов, работающий с точностью до наоборот; тогда первым символом в таком наборе должен быть ^. Этот символ дает указание scanf() принимать любой символ, который не входит в набор сканируемых символов.</p><p>В большинстве реализаций для указания диапазона можно использовать дефис. Например, указанный ниже набор сканируемых символов дает функции scanf()указание принимать символы от А до Z:</p><p>%[A-Z]</p><p>Следует обратить внимание на такой важный момент: набор сканируемых символов чувствителен к регистру букв. Если нужно сканировать буквы и на верхнем, и на нижнем регистре, то их надо указывать отдельно для каждого регистра.</p><h2>Пропуск лишних разделителей</h2><p>Разделитель в управляющей строке дает scanf() указание пропустить в потоке ввода один или несколько начальных разделителей. Разделителями являются пробелы, табуляции, вертикальные табуляции, подачи страниц и разделители строк. В сущности, один разделитель в управляющей строке заставляет scanf()читать, но не сохранять любое количество (в том числе и нулевое) разделителей, которые находятся перед первым символом, не являющимся разделителем.</p><h2>Символы в управляющей строке, не являющиеся разделителями</h2><p>Если в управляющей строке находится символ, не являющийся разделителем, то функция scanf() прочитает символ из входного потока, проверит, совпадает ли прочитанный символ с указанным в управляющей строке, и в случае совпадения пропустит прочитанный символ. Например, "%d,%d" заставляет scanf()прочитать целое значение, прочитать запятую и пропустить ее (если это была запятая!), а затем прочитать следующее целое значение. Если же указанный символ во входном потоке не будет найден, то scanf() завершится. Когда нужно прочитать и отбросить знак процента, то в управляющей строке следует указать %%.</p><h2>Функции scanf() необходимо передавать адреса</h2><p>Для всех переменных, которые должны получить значения с помощью scanf(), должны быть переданы адреса. Это означает, что все аргументы должны быть указателями. Вспомните, что именно так в С создается вызов по ссылке и именно тогда функция может изменить содержимое аргумента. Например, для считывания целого значения в переменную count можно использовать такой вызов функции scanf():</p><pre><code>scanf("%d", &amp;count);</code></pre><p>Строки будут читаться в символьные массивы, а имя массива без индекса является адресом первого его элемента. Таким образом, чтобы прочитать строку в символьный массив, можно использовать оператор</p><pre><code>scanf("%s", str);</code></pre><p>В этом случае str является указателем, и потому перед ним не нужно ставить оператор &amp;.</p><h2>Модификаторы формата</h2><p>Как и printf(), функция scanf() дает возможность модифицировать некоторое число своих спецификаторов формата. В спецификаторах формата моно указать модификатор максимальной длины поля. Это целое число, расположенное между % и спецификатором формата; оно ограничивает число символов, считываемых из этого поля. Например, чтобы считывать в переменную str не более 20 символов, пишите</p><pre><code>scanf("%20s", str);</code></pre><p>Если поток ввода содержит больше 20 символов, то при следующем вызове функций ввода считывание начнется после того места, где оно закончилось при предыдущем вызове. Например, если вы в ответ на вызов scanf() из этого примера введете</p><p>ABCDEFGHIJKLMNOPRSTUVWXYZ</p><p>то в str из-за спецификатора максимальной ширины поля будет помещено только 20 символов, то есть символы вплоть до Т. Это значит, что оставшиеся символы UVWXYZ пока еще не прочитаны. При следующем вызове scanf(), например при выполнении оператора</p><pre><code>scanf("%s", str);</code></pre><p>в str будут помешены буквы UVWXYZ. Ввод из поля может завершиться и до того, как будет достигнута максимальная длина поля — если встретится разделитель. В таком случае scanf() переходит к следующему полю.</p><p>Чтобы прочитать длинное целое, перед спецификатором формата поместите l (эль). А для чтения короткого целого значения перед спецификатором формата следует поместить n. Эти модификаторы можно использовать со следующими кодами форматов: d, i, o, u, x и n.</p><p>По умолчанию спецификаторы f, e и g дают scanf() указание присваивать данные переменной типа float. Если перед одним из этих спецификаторов будет помещен l (эль), то scanf() будет присваивать данные переменной типа double. Использование L дает scanf() указание, чтобы переменная, принимающая данные, имела тип long double.</p><p>Если в компиляторе предусмотрена обработка <em>двухбайтовых символов</em><sup><a href="http://www.google.com/url?q=http%3A%2F%2Fpaulfertser.info%2Fpolnyy_spravochnik_po_c_gerbert_shildt%2F08%2F0805.htm%2311&amp;sa=D&amp;sntz=1&amp;usg=AOvVaw3vSxDNP17JI4PiQ6oRPWIJ">[1]</a></sup>, добавленных в язык С Поправкой 1 от 1995 года, то модификатор l можно также использовать с такими кодами формата, как c и s. l непосредственно перед c является признаком указателя на объект типа wchar_t. А l непосредственно перед s — признак указателя на массив элементов типа wchar_t. Кроме того, l также применяется для модификации набора сканируемых символов, чтобы этот набор можно было использовать для двухбайтовых символов.</p><p>В Стандарте С99, кроме перечисленных, предусмотрены также модификаторы ll и hh, последний из которых можно применять к спецификаторам d, i, o, u, xили n. Он является признаком того, что соответствующий аргумент является указателем на значение, типа signed или unsigned char. Кроме того, к спецификаторам d, i, o, u, x и n можно применять и ll, этот спецификатор является признаком того, что соответствующий аргумент является указателем на значение типа signed (или unsigned) long long int.</p><h2>Подавление ввода</h2><pre><code>scanf() может прочитать поле, но не присваивать прочитанное значение никакой переменной; для этого надо перед литерой-спецификатором формата поля поставить звездочку, *. Например, когда выполняется оператор
+scanf("%d%*c%d", &amp;x, &amp;y);</code></pre><p>можно ввести пару координат 10,10. Запятая будет прочитана правильно, но ничему не будет присвоена. Подавление присвоения особенно полезно тогда, когда нужно обработать только часть того, что вводится.</p></div>
+    </article>
+    <nav class="pager"><a class="pager-prev" href="alfavit.html"><span class="pager-dir">← предыдущая</span><span class="pager-title">Алфавит</span></a><a class="pager-next" href="primery.html"><span class="pager-dir">следующая →</span><span class="pager-title">Примеры</span></a></nav>
+    <footer class="site-foot">
+      <div class="foot-cols">
+        <div><b>Кафедра систем управления и информационных технологий</b><br>
+             Строительство ВГТУ · курс «Основы программирования и алгоритмизация»</div>
+        <div><b>Авторы курса</b><br>
+             О.В. Минакова — <a href="mailto:ominakova@vgasu.vrn.ru">ominakova@vgasu.vrn.ru</a><br>
+             О.В. Курипта — <a href="mailto:okuripta@cchgeu.ru">okuripta@cchgeu.ru</a></div>
+        <div><b>Материалы</b><br>
+             Стандарт C89/C99 · Visual Studio 2017/2022 · MVS</div>
+      </div>
+      <div class="foot-note">Страница переработана: единая нумерация лабораторных работ по рабочему плану,
+      исправлены битые таблицы и ссылки, меню приведено к логическому порядку.</div>
+    </footer>
+  </main>
+  <aside class="toc" id="toc"><div class="toc-title">На странице</div><nav id="toc-list"></nav></aside>
+</div>
+<script src="../assets/search-index.js"></script>
+<script src="../assets/app.js"></script>
+</body>
+</html>
